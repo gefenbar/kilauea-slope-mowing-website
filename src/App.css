@@ -3,10 +3,10 @@
 body {
   font-family: Arial, sans-serif;
   margin: 0;
- 
+ background-color: #d9cca4;
 }
 html{
-  background-color: #d9cca4;
+  background-color: #d9cca4!important;
 }
 
 
@@ -27,7 +27,7 @@ html{
 /* Style the hero section */
 
 .hero {
-  
+  background-color: #ccc;
   position: relative;
   height: 100vh;
   display: flex;
@@ -56,10 +56,10 @@ html{
 
 .hero video {
   position: relative;
-  width:70vw;
-  height: 80vh;
-  object-fit: cover;
-
+  width:90vw;
+  /* height: 80vh; */
+  object-fit: contain;
+border-radius: 30px;
 }
 
 
@@ -72,7 +72,7 @@ html{
   max-width: 1200px;
   text-align: center;
   background: linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0.5));
-  border-radius: 30px;
+  border-radius: 20px;
 
 }
 
@@ -146,6 +146,7 @@ html{
   width: 80%;
   max-width: 800px;
   margin: 0 auto;
+  cursor: pointer;
 }
 .before-after p {
 font-weight: 900;
@@ -182,6 +183,7 @@ text-align: center;
 /* Style the gallery section */
 .gallery {
   padding: 4rem 2rem;
+  background-color: #d9cca4;
 }
 
 /* Style the image grid */
@@ -297,6 +299,7 @@ text-align: center;
   font-size: 1rem;
   color: #333;
   margin-left: 1%;
+  
 }
 
 /* Improve overall layout and spacing */

@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import './App.css';
 import { Helmet } from 'react-helmet';
 import NavBar from './NavBar'
+import { AccessibilityWidget } from 'react-accessibility'
+
 const App = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -11,6 +13,7 @@ const App = () => {
 
   return (
     <div className={`landing-page ${isMenuOpen ? 'menu-open' : ''}`}>
+       <AccessibilityWidget />
     <NavBar toggleMenu={toggleMenu} />
 
        <Helmet>
@@ -28,11 +31,13 @@ const App = () => {
           <video className="hero-video" src="mower.mp4" autoPlay loop muted />
         </div>
         <div className="hero-overlay">
+          <div className='hero-content'>
           <h1 className="hero-title">Kauai Steep Slope Mowing</h1>
           <p className="hero-subtitle">
             Transforming landscapes with precision. Get your free estimate today!
           </p>
           <button className="cta-button">Get Quote</button>
+          </div>
         </div>
       </section>
 
