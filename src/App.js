@@ -1,9 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import { Helmet } from 'react-helmet';
+import NavBar from './NavBar'
 const App = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
-    <div className="landing-page">
+    <div className={`landing-page ${isMenuOpen ? 'menu-open' : ''}`}>
+    <NavBar toggleMenu={toggleMenu} />
+
        <Helmet>
         <meta charSet="utf-8" />
         <title>Kauai Steep Slope Mowing</title>
@@ -14,7 +23,7 @@ const App = () => {
         {/* Add more meta tags as needed for your specific content */}
       </Helmet>
       {/* Hero Section */}
-      <section className="hero">
+      <section className="hero" id="hero">
         <div className="video-container">
           <video className="hero-video" src="mower.mp4" autoPlay loop muted />
         </div>
@@ -28,7 +37,7 @@ const App = () => {
       </section>
 
       {/* Services Section */}
-      <section className="services">
+      <section className="services" id='services'>
         <h2 className="section-title">Our Specialization</h2>
         <div className="services-list">
           <div className="service-item">
@@ -51,7 +60,7 @@ const App = () => {
       </section>
 
       {/* Transformation Section */}
-      <section className="transformation">
+      <section className="transformation" id="transformation">
         <h2 className="section-title">Our Transformation</h2>
         <div className="before-after">
           <div className="before-after-container">
@@ -63,16 +72,16 @@ const App = () => {
       </section>
 
       {/* Gallery Section */}
-      <section className="gallery">
+      <section className="gallery" id="gallery">
         <h2 className="section-title">Gallery</h2>
         <div className="image-grid">
-          <img src="2.jpeg" alt="Gallery Image 1" className="gallery-image" />
-          <img id="small-img" src="1.jpeg" alt="Gallery Image 2" className="gallery-image" />
+          <img src="2.jpeg" alt="mower1" className="gallery-image" />
+          <img id="small-img" src="1.jpeg" alt="" className="gallery-image" />
         </div>
       </section>
 
       {/* Contact Section */}
-      <section className="contact">
+      <section className="contact" id="contact">
         <h2 className="section-title">Contact Us</h2>
         <form className="contact-form">
           <input type="text" placeholder="Your Name" required className="input-field" />
