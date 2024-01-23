@@ -1,9 +1,18 @@
 import React from 'react';
 import './App.css';
-
+import { Helmet } from 'react-helmet';
 const App = () => {
   return (
     <div className="landing-page">
+       <Helmet>
+        <meta charSet="utf-8" />
+        <title>Kauai Steep Slope Mowing</title>
+        <meta name="description" content="Transforming landscapes with precision. Get your free estimate today!" />
+        <meta name="keywords" content="Kauai, steep slope mowing, landscaping, grass mowing, bushes, trees, wet conditions" />
+        <meta name="author" content="Niv" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        {/* Add more meta tags as needed for your specific content */}
+      </Helmet>
       {/* Hero Section */}
       <section className="hero">
         <div className="video-container">

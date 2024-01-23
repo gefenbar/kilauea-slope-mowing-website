@@ -35,6 +35,7 @@ html{
   justify-content: center;
   align-items: center;
   text-align: center;
+  
 }
 .hero p {
   font-size: 24px;
@@ -67,7 +68,7 @@ html{
 .hero-overlay {
   position: relative;
   z-index: 1;
-  width: 80%;
+  width: 60vw;
   max-width: 1200px;
   text-align: center;
   background: linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0.5));
@@ -80,18 +81,33 @@ html{
   font-size: 4rem;
   font-weight: bold;
   margin-bottom: 1rem;
+  animation: fadeInUp 1s ease-out;
+}
 
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Style the hero subtitle */
 .hero-subtitle {
   font-size: 1.5rem;
   margin-bottom: 2rem;
-  
+  animation: fadeInUp 1s ease-out;
+
 }
 
 /* Style the call to action button */
 .cta-button {
+  transition: transform 0.3s, background-color 0.3s;
+
   display: inline-block;
   padding: 0.75rem 1.5rem;
   border: none;
@@ -108,8 +124,8 @@ html{
 /* Add a hover effect to the button */
 .cta-button:hover {
   transform: scale(1.1);
+  background-color: #ffc107; /* Change to your preferred hover color */
 }
-
 /* Style the transformation section */
 .transformation {
   padding: 4rem 2rem;
@@ -132,7 +148,8 @@ html{
   margin: 0 auto;
 }
 .before-after p {
-
+font-weight: 900;
+font-size: large;
 text-align: center;
 }
 
