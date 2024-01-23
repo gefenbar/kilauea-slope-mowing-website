@@ -1,0 +1,242 @@
+/* Import a custom font from Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+ 
+}
+html{
+  background-color: #d9cca4;
+}
+
+
+/* Define some variables for colors and fonts */
+:root {
+  --primary-color: #d9cca4;
+  --secondary-color: #070708;
+  --tertiary-color: #e9ecef;
+  --font-family: 'Roboto Slab', serif;
+}
+
+/* Apply a global style to the landing page */
+.landing-page {
+  font-family: var(--font-family);
+  color: #212529;
+}
+
+/* Style the hero section */
+
+.hero {
+  
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.hero p {
+  font-size: 24px;
+  color: var(--primary-color);
+  z-index: 1;
+  font-weight: bold;
+}
+.hero h1 {
+  font-size: 48px;
+  color: #fff;
+  z-index: 1;
+}
+
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.hero video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+
+
+
+/* Add a linear gradient overlay to the hero section */
+.hero-overlay {
+  position: relative;
+  z-index: 1;
+  width: 80%;
+  max-width: 1200px;
+  text-align: center;
+  background: linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0.5));
+  border-radius: 30px;
+
+}
+
+/* Add a text shadow and a gradient text effect to the hero title */
+.hero-title {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+
+}
+
+/* Style the hero subtitle */
+.hero-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  
+}
+
+/* Style the call to action button */
+.cta-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: black;
+  background: var(--primary-color);
+  cursor: pointer;
+  transition: transform 0.3s;
+  margin-bottom:1vh
+}
+
+/* Add a hover effect to the button */
+.cta-button:hover {
+  transform: scale(1.1);
+}
+
+/* Style the transformation section */
+.transformation {
+  padding: 4rem 2rem;
+  background:#d9cca4 ;
+}
+
+/* Style the section title */
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Style the before-after container */
+.before-after-container {
+  position: relative;
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.before-after p {
+
+text-align: center;
+}
+
+/* Style the before and after images */
+.before-image, .after-image {
+  width: 100%;
+  height: auto;
+  border-radius: 30px;
+}
+
+/* Add a clip path to the after image */
+.after-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  clip-path: inset(0 95% 0 0);
+  transition: clip-path 3s;
+}
+
+/* Add an interactive effect to the after image on hover */
+.before-after-container:hover .after-image {
+  clip-path: inset(0 0 0 0);
+  cursor: ew-resize; /* Change cursor to indicate interactivity */
+}
+ #small-img 
+{
+  object-position:50% 80%;
+}
+
+/* Style the gallery section */
+.gallery {
+  padding: 4rem 2rem;
+}
+
+/* Style the image grid */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1rem;
+}
+
+/* Style the gallery images */
+.gallery-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 30px;
+
+}
+
+/* Style the contact section */
+.contact {
+  padding: 4rem 2rem;
+  background: var(--tertiary-color);
+}
+
+/* Style the contact form */
+.contact-form {
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.contact button {
+  width: 150px;
+  align-self: center;
+}
+.contact input, 
+.contact textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+}
+
+
+/* Style the input and textarea fields */
+.input-field, .textarea-field {
+  padding: 0.5rem;
+  border: 2px solid var(--primary-color);
+  border-radius: 0.25rem;
+  font-family: var(--font-family);
+  font-size: 1rem;
+}
+
+/* Style the textarea field to span two columns */
+.textarea-field {
+  grid-column: span 2;
+  height: 200px;
+  resize: none;
+}
+
+/* Add a focus effect to the input and textarea fields */
+.input-field:focus, .textarea-field:focus {
+  outline: none;
+  border-color: var(--secondary-color);
+}
+
