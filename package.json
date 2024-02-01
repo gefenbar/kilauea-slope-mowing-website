@@ -4,6 +4,7 @@
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "index.js",
   "dependencies": {
+    "@formspree/react": "^2.5.1",
     "ansi-styles": "^3.2.1",
     "browserslist": "^4.22.2",
     "caniuse-lite": "^1.0.30001579",

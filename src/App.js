@@ -3,7 +3,7 @@ import './App.css';
 import { Helmet } from 'react-helmet';
 import NavBar from './NavBar'
 import { AccessibilityWidget } from 'react-accessibility'
-
+import Contact_Form from './Contact_Form'
 const App = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -43,7 +43,7 @@ const App = () => {
 
       {/* Services Section */}
       <section className="services" id='services'>
-        <h2 className="section-title">Our Specialization</h2>
+        <h2 className="section-title">We specialize in</h2>
         <div className="services-list">
           <div className="service-item">
             <h3>Slopes Mowing</h3>
@@ -86,23 +86,11 @@ const App = () => {
       </section>
 
       {/* Contact Section */}
-      <section className="contact" id="contact">
-        <h2 className="section-title">Contact Us</h2>
-        <form className="contact-form">
-          <input type="text" placeholder="Your Name" required className="input-field" />
-          <input type="email" placeholder="Your Email" required className="input-field" />
-          <textarea placeholder="Your Message" required className="textarea-field"></textarea>
-          <button type="submit" className="cta-button">
-            Send Message
-          </button>
-        </form>
-        
-      </section>
-      <p className="contact-info">
+    <Contact_Form/>
+    <p className="contact-info">
           For inquiries and estimates, contact us at{' '}
           <a href="mailto:Kilaueasolutions@gmail.com">Kilaueasolutions@gmail.com</a>
-        </p>
-
+      </p>
     </div>
   );
 };

@@ -27,7 +27,7 @@ html{
 /* Style the hero section */
 
 .hero {
-  background-color: #ccc;
+  
   position: relative;
   height: 100vh;
   display: flex;
@@ -56,10 +56,12 @@ html{
 
 .hero video {
   position: relative;
-  width:90vw;
-  /* height: 80vh; */
-  object-fit: contain;
+  width:70vw;
+  height: 80vh;
+  object-fit: cover;
 border-radius: 30px;
+margin-top: 8vh;
+border: solid 6px #5b8155;
 }
 
 
@@ -72,7 +74,7 @@ border-radius: 30px;
   max-width: 1200px;
   text-align: center;
   background: linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0.5));
-  border-radius: 20px;
+  border-radius: 30px;
 
 }
 
@@ -159,6 +161,7 @@ text-align: center;
   width: 100%;
   height: auto;
   border-radius: 30px;
+  border: solid 6px #5b8155;
 }
 
 /* Add a clip path to the after image */
@@ -183,7 +186,7 @@ text-align: center;
 /* Style the gallery section */
 .gallery {
   padding: 4rem 2rem;
-  background-color: #d9cca4;
+  background-color: #5b8155;
 }
 
 /* Style the image grid */
@@ -205,7 +208,7 @@ text-align: center;
 /* Style the contact section */
 .contact {
   padding: 4rem 2rem;
-  background: #5b8155;
+  background: #d9cca4;
   height: 75vh;
 }
 
@@ -222,6 +225,7 @@ text-align: center;
 .contact button {
   width: 150px;
   align-self: center;
+  background-color: #5b8155;
 }
 .contact input, 
 .contact textarea {
@@ -301,6 +305,21 @@ text-align: center;
   margin-left: 1%;
   
 }
+#submit_message {
+  text-align: center;
+  font-size: larger;
+  padding: 20px;
+  background-color: #5b8155; /* Green background color */
+  color: #ddd; /* White text color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+#submit_message:hover {
+  background-color: #fff; /* Darker green on hover */
+color: #5b8155;
+}
+
 
 /* Improve overall layout and spacing */
 /* Add these styles at the end of your existing CSS */
@@ -316,6 +335,7 @@ text-align: center;
 }
 
 .logo {
+  margin-left: 5px;
   /* font-size: 1.5rem; */
   color: #fff;
   padding: 3px;
@@ -355,5 +375,54 @@ text-align: center;
 }
 .navbar.contact-services-background .active a {
   color: #5b8155; /* Change the color as desired for the active state */
+}
+
+/* Media query for screens under 650px */
+@media screen and (max-width: 650px) {
+  .navbar {
+    flex-direction: row; /* Change back to row for logo on left and menu on right */
+    justify-content: space-between; /* Space out logo and menu on opposite ends */
+    align-items: center;
+  }
+
+  .nav-list {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    display: none; /* Initially hide the menu */
+  }
+
+  .nav-item {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .menu-toggle {
+    display: block;
+    margin-right: 10px;
+    margin-top: 10px;
+    /* margin-top: 20px; */
+    cursor: pointer;
+    color: #fff; /* Add a color for better visibility */
+  }
+
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #333; /* Add a color for better visibility */
+    margin: 5px 0;
+  }
+
+  .menu-toggle::before {
+    font-size: 20px; /* Adjust size as needed */
+    line-height: 1;
+    display: inline-block;
+  }
+
+  /* Styles for the menu when it's open */
+  .menu-open .nav-list {
+    display: block; /* Show the menu */
+  }
 }
 
