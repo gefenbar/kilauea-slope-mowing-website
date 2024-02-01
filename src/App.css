@@ -313,7 +313,13 @@ text-align: center;
   color: #ddd; /* White text color */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
   transition: background-color 0.3s ease; /* Smooth transition on hover */
+width: fit-content;
+  /* Centering the element */
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 30px;
 }
+
 
 #submit_message:hover {
   background-color: #fff; /* Darker green on hover */
