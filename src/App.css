@@ -25,6 +25,7 @@ html{
 }
 
 /* Style the hero section */
+
 .hero {
   
   position: relative;
@@ -70,6 +71,7 @@ border: solid 6px #5b8155;
 
 
 
+/* Add a linear gradient overlay to the hero section */
 .hero-overlay {
   position: relative;
   z-index: 1;
@@ -127,20 +129,21 @@ border: solid 6px #5b8155;
   margin-bottom:1vh;
 }
 
+/* Add a hover effect to the button */
 .cta-button:hover {
   transform: scale(1.1);
-  background-color: #ffc107; 
+  background-color: #ffc107; /* Change to your preferred hover color */
 }
 .cta-button a {text-decoration: none;
   color: #000;
 }
 /* Style the transformation section */
 .transformation {
-  text-align: center;
   padding: 4rem 2rem;
-  background: #d9cca4;
+  background:#d9cca4 ;
 }
 
+/* Style the section title */
 .section-title {
   font-size: 2.5rem;
   font-weight: bold;
@@ -148,33 +151,24 @@ border: solid 6px #5b8155;
   margin-bottom: 2rem;
 }
 
+/* Style the before-after container */
 .before-after-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-  max-width: 800px; /* Adjusted max-width for responsiveness */
+  max-width: 800px;
   margin: 0 auto;
-  background: repeating-linear-gradient(144deg, #00000018, transparent 100px);
-  padding: 40px;
 }
-
 .before-after p {
-  font-weight: 900;
-  font-size: large;
-  text-align: center;
+font-weight: 900;
+font-size: large;
+text-align: center;
 }
 
-.before-image,
-.after-image {
-  
-  width: calc(50% - 5px); /* 50% width with a little gap between images */
-  max-width: 100%;
+/* Style the before and after images */
+.before-image, .after-image {
+  width: 100%;
   height: auto;
-  border-radius: 8px;
-  border: solid 2px #5b8155;
+  border-radius: 30px;
+  border: solid 6px #5b8155;
 }
-
 .transformation {
   text-align: center;
   padding: 80px 0;
@@ -186,12 +180,19 @@ border: solid 6px #5b8155;
   color: #333;
 }
 
+.before-after-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+
 .overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 99%;
+  height: 100%;
   background: rgba(0, 0, 0, 0.5);
   display: flex;
   align-items: center;
@@ -199,26 +200,28 @@ border: solid 6px #5b8155;
   opacity: 0.9;
   transition: opacity 0.5s;
 }
+/* 
+.image-container:hover .overlay {
+  opacity: 0;
+} */
 
 .overlay-text {
   color: #fff;
+  /* font-size: 1.5rem; */
+  /* font-weight: bold; */
 }
-
 .image-container {
   position: relative;
   overflow: hidden;
-  border-radius: 8px;
+  border-radius: 30px;
   transition: transform 0.5s ease-in-out;
-  max-width: 500px;
-  cursor: pointer;
-
 }
 
 .before-image,
 .after-image {
-  width: 100%; /* Ensuring responsiveness */
+  width: 100%;
   border: 2px solid #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   transition: transform 0.5s ease-in-out;
 }
 
@@ -251,17 +254,39 @@ border: solid 6px #5b8155;
   }
 }
 
+/* Add a clip path to the after image */
+.after-image {
+  /* position: absolute; */
+  /* top: 0; */
+  /* left: 0; */
+  /* clip-path: inset(0 95% 0 0); */
+  /* transition: clip-path 3s; */
+}
+
+/* Add an interactive effect to the after image on hover */
+.before-after-container:hover .after-image {
+  /* clip-path: inset(0 0 0 0); */
+  /* cursor: ew-resize;  */
+}
+ #small-img 
+{
+  /* object-position:50% 80%; */
+}
+
+/* Style the gallery section */
 .gallery {
   padding: 4rem 2rem;
   background-color: #5b8155;
 }
 
+/* Style the image grid */
 .image-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 1rem;
 }
 
+/* Style the gallery images */
 .gallery-image {
   width: 100%;
   height: 300px;
@@ -270,12 +295,14 @@ border: solid 6px #5b8155;
 
 }
 
+/* Style the contact section */
 .contact {
   padding: 4rem 2rem;
   background: #d9cca4;
   height: 75vh;
 }
 
+/* Style the contact form */
 .contact-form {
   width: 80%;
   max-width: 600px;
@@ -299,6 +326,7 @@ border: solid 6px #5b8155;
 }
 
 
+/* Style the input and textarea fields */
 .input-field, .textarea-field {
   padding: 0.5rem;
   border: 2px solid var(--primary-color);
@@ -307,16 +335,21 @@ border: solid 6px #5b8155;
   font-size: 1rem;
 }
 
+/* Style the textarea field to span two columns */
 .textarea-field {
   grid-column: span 2;
   height: 200px;
   resize: none;
 }
 
+/* Add a focus effect to the input and textarea fields */
 .input-field:focus, .textarea-field:focus {
   outline: none;
   border-color: var(--secondary-color);
 }
+
+/* Additional styles for new content and enhancements */
+
 /* Style the Services Section */
 .services {
   padding: 4rem 2rem;
@@ -433,6 +466,14 @@ color: #5b8155;
   background-color: #d9cca4;
   /* Add any other styles you want for the background color */
 }
+ .navbar.contact-services-background .bar {
+ background-color: black;
+  /* Add any other styles you want for the background color */
+}
+.navbar.contact-services-background .menu-toggle {
+  color: black;
+   /* Add any other styles you want for the background color */
+ }
 .navbar.contact-services-background a {
   color: #333;
 }
@@ -475,7 +516,7 @@ color: #5b8155;
     display: block;
     width: 25px;
     height: 3px;
-    background-color: #333; /* Add a color for better visibility */
+    background-color: #fff; /* Add a color for better visibility */
     margin: 5px 0;
   }
 
