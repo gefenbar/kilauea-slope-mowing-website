@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet';
 import NavBar from './NavBar'
 import { AccessibilityWidget } from 'react-accessibility'
 import Contact_Form from './Contact_Form'
+import TransformationSection from './Transformation';
 const App = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -18,8 +19,9 @@ const App = () => {
 
        <Helmet>
         <meta charSet="utf-8" />
-        <title>Kauai Steep Slope Mowing</title>
-        <meta name="description" content="Transforming landscapes with precision. Get your free estimate today!" />
+        <title>Kilauea Solutions Inc.</title>
+        <meta name="description" content="Kauai Steep Slope Mowing.
+Transforming landscapes with precision. Get your free estimate today!" />
         <meta name="keywords" content="Kauai, steep slope mowing, landscaping, grass mowing, bushes, trees, wet conditions" />
         <meta name="author" content="Niv" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -27,17 +29,18 @@ const App = () => {
       </Helmet>
       {/* Hero Section */}
       <section className="hero" id="hero">
-        <div className="video-container">
-          <video className="hero-video" src="mower.mp4" autoPlay loop muted />
+        <div className="image-container">
+          <img className="hero-image" src="2.jpeg"/>
         </div>
         <div className="hero-overlay">
           <div className='hero-content'>
-          <h1 className="hero-title">Kauai Steep Slope Mowing</h1>
+          <h1 className="hero-title">Kilauea Solutions Inc.</h1>
           <p className="hero-subtitle">
             Transforming landscapes with precision. Get your free estimate today!
           </p>
-          <button className="cta-button">Get Quote</button>
           </div>
+          <button className="cta-button"><a href='#contact'>Get Quote</a></button>
+
         </div>
       </section>
 
@@ -63,18 +66,7 @@ const App = () => {
           </div>
         </div>
       </section>
-
-      {/* Transformation Section */}
-      <section className="transformation" id="transformation">
-        <h2 className="section-title">Our Transformation</h2>
-        <div className="before-after">
-          <div className="before-after-container">
-            <img src="before.jpeg" alt="Before Mowing" className="before-image" />
-            <img src="after.jpeg" alt="After Mowing" className="after-image" />
-          </div>
-          <p>Witness the dramatic difference our service makes on the toughest terrains.</p>
-        </div>
-      </section>
+<TransformationSection/>
 
       {/* Gallery Section */}
       <section className="gallery" id="gallery">

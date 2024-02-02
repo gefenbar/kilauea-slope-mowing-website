@@ -45,16 +45,21 @@ html{
 }
 .hero h1 {
   font-size: 48px;
-  color: #fff;
   z-index: 1;
+  max-width: fit-content;
+  display: inline;
+  background-color: #10100e98;
+  color: #fff;
+  font-weight: 600;
+
 }
 
-.video-container {
+.image-container {
   position: absolute;
   overflow: hidden;
 }
 
-.hero video {
+.hero img {
   position: relative;
   width:70vw;
   height: 80vh;
@@ -73,19 +78,16 @@ border: solid 6px #5b8155;
   width: 60vw;
   max-width: 1200px;
   text-align: center;
-  background: linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0.5));
   border-radius: 30px;
 
 }
 
-/* Add a text shadow and a gradient text effect to the hero title */
 .hero-title {
   font-size: 4rem;
   font-weight: bold;
   margin-bottom: 1rem;
   animation: fadeInUp 1s ease-out;
 }
-
 
 @keyframes fadeInUp {
   from {
@@ -98,18 +100,22 @@ border: solid 6px #5b8155;
   }
 }
 
-/* Style the hero subtitle */
 .hero-subtitle {
-  font-size: 1.5rem;
   margin-bottom: 2rem;
   animation: fadeInUp 1s ease-out;
-
+}
+.hero p{
+  font-size:1.5rem;
+  background-color: #10100e98;
+  color: #fff;
+  max-width: fit-content;
+  display: inline-table;
+  font-weight: 500;
 }
 
 /* Style the call to action button */
 .cta-button {
   transition: transform 0.3s, background-color 0.3s;
-
   display: inline-block;
   padding: 0.75rem 1.5rem;
   border: none;
@@ -120,13 +126,16 @@ border: solid 6px #5b8155;
   background: var(--primary-color);
   cursor: pointer;
   transition: transform 0.3s;
-  margin-bottom:1vh
+  margin-bottom:1vh;
 }
 
 /* Add a hover effect to the button */
 .cta-button:hover {
   transform: scale(1.1);
   background-color: #ffc107; /* Change to your preferred hover color */
+}
+.cta-button a {text-decoration: none;
+  color: #000;
 }
 /* Style the transformation section */
 .transformation {
@@ -382,8 +391,10 @@ color: #5b8155;
 .navbar.contact-services-background .active a {
   color: #5b8155; /* Change the color as desired for the active state */
 }
+.navbar.contact-services-background a:hover {
+  color: #5b8155; /* Change the color as desired for the active state */
+}
 
-/* Media query for screens under 650px */
 @media screen and (max-width: 650px) {
   .navbar {
     flex-direction: row; /* Change back to row for logo on left and menu on right */
