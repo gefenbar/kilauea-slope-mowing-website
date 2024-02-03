@@ -254,25 +254,6 @@ text-align: center;
   }
 }
 
-/* Add a clip path to the after image */
-.after-image {
-  /* position: absolute; */
-  /* top: 0; */
-  /* left: 0; */
-  /* clip-path: inset(0 95% 0 0); */
-  /* transition: clip-path 3s; */
-}
-
-/* Add an interactive effect to the after image on hover */
-.before-after-container:hover .after-image {
-  /* clip-path: inset(0 0 0 0); */
-  /* cursor: ew-resize;  */
-}
- #small-img 
-{
-  /* object-position:50% 80%; */
-}
-
 /* Style the gallery section */
 .gallery {
   padding: 4rem 2rem;
