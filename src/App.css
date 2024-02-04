@@ -507,11 +507,14 @@ color: #5b8155;
   /* Lock the orientation to portrait */
   @media (orientation: landscape) {
     body {
-      transform: rotate(0deg); /* Reset any rotation */
+      transform: rotate(0deg);
       transform-origin: center center;
-      width: 100vw; /* Reset any width changes */
-      height: 100vh; /* Reset any height changes */
-      overflow: hidden; /* Prevent scroll bars if there were any */
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      position: fixed;
+      top: 0;
+      left: 0;
     }
   }
 }

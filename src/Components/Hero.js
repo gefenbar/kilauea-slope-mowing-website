@@ -2,7 +2,7 @@ export default function Hero() {
   return (
     <section className="hero" id="hero">
       <div className="hero-container">
-        <img className="hero-image" src="2.jpeg" />
+        <img className="hero-image" src="2.jpeg" alt="mower" />
       </div>
       <div className="hero-overlay">
         <div className="hero-content">
