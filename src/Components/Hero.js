@@ -9,6 +9,7 @@ export default function Hero() {
           // loading="lazy"
           width="0px"
           height="0px"
+          
         />
       </div>
       <div className="hero-overlay">

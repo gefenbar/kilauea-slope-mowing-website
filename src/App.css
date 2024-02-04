@@ -502,6 +502,11 @@ color: #5b8155;
 .navbar.contact-services-background a:hover {
   color: #5b8155; /* Change the color as desired for the active state */
 }
+@media only screen and (max-width: 768px) {
+*{
+  animation: none!important;
+}
+}
 
 @media screen and (max-width: 650px) {
   .navbar {
@@ -570,3 +575,4 @@ object-position: left;
   font-size: larger;
 }
 }
+
