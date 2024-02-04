@@ -4,7 +4,7 @@ export default function Hero() {
       <div className="hero-container">
         <img
           className="hero-image"
-          src="mower_1.jpeg"
+          src="mower_1.webp"
           alt="mower"
           // loading="lazy"
           width="1200"

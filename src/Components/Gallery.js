@@ -4,7 +4,7 @@ export default function Gallery() {
       <h2 className="section-title">Gallery</h2>
       <div className="image-grid">
         <img
-          src="mower_1.jpeg"
+          src="mower_1.webp"
           alt="slope mowing"
           loading="lazy"
           width="0px"
@@ -22,6 +22,17 @@ export default function Gallery() {
           loop
           className="gallery-image"
         />
+        
+        {/* <video src="mower_3.mp4" muted autoPlay className="gallery-image" /> */}
+
+        <img
+          src="mower_2.webp"
+          alt="slope mowing"
+          loading="lazy"
+          width="0px"
+          height="0px"
+          className="gallery-image"
+        />
         <video
           src="mower_2.mp4"
           alt="slope mowing"
@@ -31,16 +42,6 @@ export default function Gallery() {
           muted
           autoPlay
           loop
-          className="gallery-image"
-        />
-        {/* <video src="mower_3.mp4" muted autoPlay className="gallery-image" /> */}
-
-        <img
-          src="mower_2.jpeg"
-          alt="slope mowing"
-          loading="lazy"
-          width="0px"
-          height="0px"
           className="gallery-image"
         />
       </div>
