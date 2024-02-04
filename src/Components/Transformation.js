@@ -11,7 +11,7 @@ export default function TransformationSection() {
               <p className="overlay-text">Before</p>
             </div>
             <img
-              src="Before.webp"
+              src="before.webp"
               alt="Before Mowing"
               className="before-image"
               loading="lazy"
@@ -24,7 +24,7 @@ export default function TransformationSection() {
               <p className="overlay-text">After</p>
             </div>
             <img
-              src="After.webp"
+              src="after.webp"
               alt="After Mowing"
               className="after-image"
               loading="lazy"
