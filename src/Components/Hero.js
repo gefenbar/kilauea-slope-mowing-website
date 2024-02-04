@@ -7,8 +7,8 @@ export default function Hero() {
           src="mower_1.webp"
           alt="mower"
           // loading="lazy"
-          width="1200"
-          height="800"
+          width="0px"
+          height="0px"
         />
       </div>
       <div className="hero-overlay">
