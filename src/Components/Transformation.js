@@ -14,13 +14,21 @@ export default function TransformationSection() {
               src="before.jpeg"
               alt="Before Mowing"
               className="before-image"
+              width={"unset"}
+              height={"unset"}
             />
           </div>
           <div className="image-container">
             <div className="overlay">
               <p className="overlay-text">After</p>
             </div>
-            <img src="after.jpeg" alt="After Mowing" className="after-image" />
+            <img
+              src="after.jpeg"
+              alt="After Mowing"
+              className="after-image"
+              width={"unset"}
+              height={"unset"}
+            />
           </div>
         </div>
         <p className="animate-slide-in">
