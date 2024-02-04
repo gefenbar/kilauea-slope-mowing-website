@@ -502,21 +502,20 @@ color: #5b8155;
 .navbar.contact-services-background a:hover {
   color: #5b8155; /* Change the color as desired for the active state */
 }
+/* Apply styles only for devices with a maximum width of 767 pixels (typical for mobile devices) */
 @media (max-width: 767px) {
   /* Lock the orientation to portrait */
   @media (orientation: landscape) {
     body {
-      transform: rotate(90deg);
-      transform-origin: left top;
-      width: 100vh;
-      height: 100vw;
-      overflow-x: hidden;
-      position: fixed;
-      top: 0;
-      left: 0;
+      transform: rotate(0deg); /* Reset any rotation */
+      transform-origin: center center;
+      width: 100vw; /* Reset any width changes */
+      height: 100vh; /* Reset any height changes */
+      overflow: hidden; /* Prevent scroll bars if there were any */
     }
   }
 }
+
 @media screen and (max-width: 650px) {
   .navbar {
     flex-direction: row; /* Change back to row for logo on left and menu on right */
