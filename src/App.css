@@ -565,5 +565,9 @@ object-position: left;
 *{
   font-size: 92%;
 }
+.nav-item
+{
+  font-size: larger;
+}
 
 }
