@@ -503,8 +503,8 @@ color: #5b8155;
   color: #5b8155; /* Change the color as desired for the active state */
 }
 @media only screen and (max-width: 768px) {
-*{
-  animation: none!important;
+   .hero-subtitle ,.hero-title    {
+  animation: none;
 }
 }
 
