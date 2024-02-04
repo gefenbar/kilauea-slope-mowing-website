@@ -14,8 +14,9 @@ export default function TransformationSection() {
               src="before.jpeg"
               alt="Before Mowing"
               className="before-image"
-              width={'10px'}
-              height={'10px'}
+              loading="lazy"
+              width="0px"
+              height="0px"
             />
           </div>
           <div className="image-container">
@@ -26,8 +27,9 @@ export default function TransformationSection() {
               src="after.jpeg"
               alt="After Mowing"
               className="after-image"
-              width={'10px'}
-              height={'10px'}
+              loading="lazy"
+              width="0px"
+              height="0px"
             />
           </div>
         </div>

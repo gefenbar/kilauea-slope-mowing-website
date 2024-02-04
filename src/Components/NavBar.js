@@ -43,7 +43,7 @@ export default function NavBar({ toggleMenu }) {
       } ${menuOpen ? "menu-open" : ""}`}
     >
       <div className="logo">
-        <img src="logo2.png" alt="logo" width={"65px"} height={"65px"} />
+        <img src="logo_1.png" alt="logo" width={"65px"} height={"65px"} />
       </div>
       <div className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
         {menuOpen ? (
