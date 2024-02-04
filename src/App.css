@@ -506,6 +506,7 @@ color: #5b8155;
    .hero-subtitle ,.hero-title    {
   animation: none;
 }
+
 }
 
 @media screen and (max-width: 650px) {
