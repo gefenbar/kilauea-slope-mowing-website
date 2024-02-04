@@ -502,7 +502,21 @@ color: #5b8155;
 .navbar.contact-services-background a:hover {
   color: #5b8155; /* Change the color as desired for the active state */
 }
-
+@media (max-width: 767px) {
+  /* Lock the orientation to portrait */
+  @media (orientation: landscape) {
+    body {
+      transform: rotate(90deg);
+      transform-origin: left top;
+      width: 100vh;
+      height: 100vw;
+      overflow-x: hidden;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+  }
+}
 @media screen and (max-width: 650px) {
   .navbar {
     flex-direction: row; /* Change back to row for logo on left and menu on right */
@@ -569,5 +583,4 @@ object-position: left;
 {
   font-size: larger;
 }
-
 }
