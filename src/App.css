@@ -128,6 +128,9 @@ border: solid 6px #5b8155;
   .hero-image-mobile {
     display: block; /* Show the mobile image on smaller screens */
   }
+  .hero img{
+    height: 70vh;
+  }
 }
 
 /* Style the call to action button */
