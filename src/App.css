@@ -347,8 +347,6 @@ text-align: center;
   border: none;
 }
 
-
-/* Style the input and textarea fields */
 .input-field, .textarea-field {
   padding: 0.5rem;
   border: 2px solid var(--primary-color);
@@ -357,20 +355,17 @@ text-align: center;
   font-size: 1rem;
 }
 
-/* Style the textarea field to span two columns */
 .textarea-field {
   grid-column: span 2;
   height: 200px;
   resize: none;
 }
 
-/* Add a focus effect to the input and textarea fields */
 .input-field:focus, .textarea-field:focus {
   outline: none;
   border-color: var(--secondary-color);
 }
 
-/* Additional styles for new content and enhancements */
 
 /* Style the Services Section */
 .services {
@@ -442,13 +437,9 @@ width: fit-content;
 
 
 #submit_message:hover {
-  background-color: #fff; /* Darker green on hover */
+  background-color: #fff;
 color: #5b8155;
 }
-
-
-/* Improve overall layout and spacing */
-/* Add these styles at the end of your existing CSS */
 .navbar {
   display: flex;
   justify-content: space-between;
