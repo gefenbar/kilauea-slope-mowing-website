@@ -10,6 +10,14 @@ export default function Hero() {
           width="0px"
           height="0px"
         />
+         <img
+          className="hero-image-mobile"
+          src="mower_1_mobile.webp"
+          alt="mower"
+          // loading="lazy"
+          width="100%"
+          height="auto"
+        />
       </div>
       <div className="hero-overlay">
         <div className="hero-content">

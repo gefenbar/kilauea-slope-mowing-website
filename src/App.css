@@ -116,6 +116,19 @@ border: solid 6px #5b8155;
   animation: fadeInUp 1s ease-out;
 }
 
+.hero-image-mobile {
+  display: none; /* Initially hide the mobile image */
+}
+
+@media (max-width: 768px) {
+  .hero-image {
+    display: none; /* Hide the larger image on smaller screens */
+  }
+
+  .hero-image-mobile {
+    display: block; /* Show the mobile image on smaller screens */
+  }
+}
 
 /* Style the call to action button */
 .cta-button {
