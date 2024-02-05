@@ -19,14 +19,12 @@ html{
   --font-family: 'Roboto Slab', serif;
 }
 
-/* Apply a global style to the landing page */
 .landing-page {
   font-family: var(--font-family);
   color: #212529;
 }
 
 /* Style the hero section */
-
 .hero {
   
   position: relative;
@@ -49,14 +47,12 @@ html{
   z-index: 1;
   max-width: fit-content;
   display: inline;
-  /* background-color: #10100e98; */
   color: #fff;
   font-weight: 600;
   text-shadow: 2px 2px 2px rgb(0 0 0);
 }
 .hero p{
   font-size:1.5rem;
-  /* background-color: #10100e98; */
   color: #fff;
   max-width: fit-content;
   display: inline;
@@ -79,9 +75,6 @@ margin-top: 8vh;
 border: solid 6px #5b8155;
 }
 
-
-
-/* Add a linear gradient overlay to the hero section */
 .hero-overlay {
   position: relative;
   z-index: 1;
@@ -117,16 +110,16 @@ border: solid 6px #5b8155;
 }
 
 .hero-image-mobile {
-  display: none; /* Initially hide the mobile image */
+  display: none; 
 }
 
 @media (max-width: 768px) {
   .hero-image {
-    display: none; /* Hide the larger image on smaller screens */
+    display: none; 
   }
 
   .hero-image-mobile {
-    display: block; /* Show the mobile image on smaller screens */
+    display: block; 
   }
   .hero img{
     height: 70vh;
@@ -437,12 +430,11 @@ color:black;
   text-align: center;
   font-size: larger;
   padding: 20px;
-  background-color: #5b8155; /* Green background color */
-  color: #ddd; /* White text color */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
-  transition: background-color 0.3s ease; /* Smooth transition on hover */
+  background-color: #5b8155;
+  color: #ddd; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  transition: background-color 0.3s ease;
 width: fit-content;
-  /* Centering the element */
   margin-left: auto;
   margin-right: auto;
   border-radius: 30px;
@@ -461,7 +453,6 @@ color: #5b8155;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* padding: 1rem 2rem; */
   background: #5b8155;
   position: fixed;
   z-index: 2;
@@ -470,7 +461,6 @@ color: #5b8155;
 
 .logo {
   margin-left: 5px;
-  /* font-size: 1.5rem; */
   color: #fff;
   padding: 3px;
 }
@@ -497,29 +487,25 @@ color: #5b8155;
 }
 
 .nav-item.active a {
-  color: #ffc107; /* Change the color as desired for the active state */
-  /* Add any other styling you want for the active state */
+  color: #ffc107;
 }
 .navbar.contact-services-background {
   background-color: #d9cca4;
-  /* Add any other styles you want for the background color */
 }
  .navbar.contact-services-background .bar {
  background-color: black;
-  /* Add any other styles you want for the background color */
 }
 .navbar.contact-services-background .menu-toggle {
   color: black;
-   /* Add any other styles you want for the background color */
  }
 .navbar.contact-services-background a {
   color: #333;
 }
 .navbar.contact-services-background .active a {
-  color: #5b8155; /* Change the color as desired for the active state */
+  color: #5b8155; 
 }
 .navbar.contact-services-background a:hover {
-  color: #5b8155; /* Change the color as desired for the active state */
+  color: #5b8155;
 }
 @media only screen and (max-width: 768px) {
    .hero-subtitle ,.hero-title    {
@@ -530,8 +516,8 @@ color: #5b8155;
 
 @media screen and (max-width: 650px) {
   .navbar {
-    flex-direction: row; /* Change back to row for logo on left and menu on right */
-    justify-content: space-between; /* Space out logo and menu on opposite ends */
+    flex-direction: row; 
+    justify-content: space-between; 
     align-items: center;
   }
 
@@ -539,7 +525,7 @@ color: #5b8155;
     width: 100%;
     text-align: center;
     padding: 20px 0;
-    display: none; /* Initially hide the menu */
+    display: none;
   }
 
   .nav-item {
@@ -551,28 +537,26 @@ color: #5b8155;
     display: block;
     margin-right: 10px;
     margin-top: 10px;
-    /* margin-top: 20px; */
     cursor: pointer;
-    color: #fff; /* Add a color for better visibility */
+    color: #fff;
   }
 
   .bar {
     display: block;
     width: 25px;
     height: 3px;
-    background-color: #fff; /* Add a color for better visibility */
+    background-color: #fff;
     margin: 5px 0;
   }
 
   .menu-toggle::before {
-    font-size: 20px; /* Adjust size as needed */
+    font-size: 20px; 
     line-height: 1;
     display: inline-block;
   }
 
-  /* Styles for the menu when it's open */
   .menu-open .nav-list {
-    display: block; /* Show the menu */
+    display: block; 
   }
 }
 @media screen and (max-width: 450px) {
