@@ -49,10 +49,19 @@ html{
   z-index: 1;
   max-width: fit-content;
   display: inline;
-  background-color: #10100e98;
+  /* background-color: #10100e98; */
   color: #fff;
   font-weight: 600;
-
+  text-shadow: 2px 2px 2px rgb(0 0 0);
+}
+.hero p{
+  font-size:1.5rem;
+  /* background-color: #10100e98; */
+  color: #fff;
+  max-width: fit-content;
+  display: inline;
+  font-weight: 600;
+  text-shadow: 2px 2px 2px rgb(0 0 0);
 }
 
 .hero-container {
@@ -90,6 +99,7 @@ border: solid 6px #5b8155;
   animation: fadeInUp 1s ease-out;
 }
 
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -105,14 +115,7 @@ border: solid 6px #5b8155;
   margin-bottom: 2rem;
   animation: fadeInUp 1s ease-out;
 }
-.hero p{
-  font-size:1.5rem;
-  background-color: #10100e98;
-  color: #fff;
-  max-width: fit-content;
-  display: inline;
-  font-weight: 500;
-}
+
 
 /* Style the call to action button */
 .cta-button {

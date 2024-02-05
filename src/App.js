@@ -3,7 +3,7 @@ import "./App.css";
 import { Helmet } from "react-helmet";
 import NavBar from "./Components/NavBar.js";
 import { AccessibilityWidget } from "react-accessibility";
-import Contact_Form from "./Components/Contact_Form.js";
+import Contact_Form from "./Components/ContactForm.js";
 import TransformationSection from "./Components/Transformation.js";
 import Gallery from "./Components/Gallery.js";
 import Hero from "./Components/Hero.js";
