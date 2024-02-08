@@ -149,7 +149,7 @@ html {
 }
 .before-after p {
   font-weight: 900;
-  font-size: large;
+  font-size: 1.2rem;
   text-align: center;
 }
 
@@ -181,7 +181,7 @@ html {
 
 .before-after p {
   font-weight: 900;
-  font-size: large;
+  font-size: 1.2rem;
   text-align: center;
 }
 
@@ -467,13 +467,12 @@ body {
 .importance-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  padding: 30px;
+  padding: 10px;
+  justify-content: space-around;
 }
 
-/* Styling for each importance item */
 .importance-item {
-  flex: 0 0 calc(50% - 20px);
+  flex: 0 0 calc(50% - 50px);
   margin: 10px;
 }
 
@@ -492,6 +491,7 @@ height: 100%;
 }
 
 .card-header {
+  font-size: 1.3rem;
   background-color: #f1f1f1;
   padding: 10px;
   font-weight: bold;
@@ -500,6 +500,7 @@ height: 100%;
 }
 
 .card-content {
+  font-size: 1.3rem;
   padding: 20px;
 }
 
@@ -508,6 +509,8 @@ height: 100%;
 }
 
 .card-content p {
+  font-size: 1.2rem;
+
   line-height: 1.6;
 }
 
@@ -651,7 +654,7 @@ height: 100%;
     font-size: small;
   }
   * {
-    font-size: 99%;
+    font-size: 98%;
   }
   .before-after p {
     padding-left: 5%;
