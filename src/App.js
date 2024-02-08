@@ -8,6 +8,7 @@ import TransformationSection from "./Components/Transformation.js";
 import Gallery from "./Components/Gallery.js";
 import Hero from "./Components/Hero.js";
 import Services from "./Components/Services.js";
+import Importance from "./Components/Importance.js";
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -40,6 +41,7 @@ Transforming landscapes with precision. Get your free estimate today!"
       <Services />
       <TransformationSection />
       <Gallery />
+      <Importance/>
       <Contact_Form />
       <p className="contact-info">
         For inquiries and estimates, contact us at{" "}

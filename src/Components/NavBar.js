@@ -29,7 +29,7 @@ export default function NavBar({ toggleMenu }) {
   }, []);
 
   const isContactOrServices = () => {
-    return activeSection === "gallery" || activeSection === "services";
+    return activeSection === "gallery" || activeSection === "services"  || activeSection === "contact"
   };
 
   const handleMenuItemClick = () => {
@@ -84,11 +84,18 @@ export default function NavBar({ toggleMenu }) {
           <a href="#gallery">Gallery</a>
         </li>
         <li
+          className={`nav-item ${activeSection === "importance" ? "active" : ""}`}
+          onClick={handleMenuItemClick}
+        >
+          <a href="#importance">Importance</a>
+        </li>
+        <li
           className={`nav-item ${activeSection === "contact" ? "active" : ""}`}
           onClick={handleMenuItemClick}
         >
           <a href="#contact">Contact</a>
         </li>
+        
       </ul>
     </nav>
   );

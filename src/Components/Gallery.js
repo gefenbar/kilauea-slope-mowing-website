@@ -1,49 +1,46 @@
+import React, { useState } from "react";
+
 export default function Gallery() {
+  const [current, setCurrent] = useState(0);
+  const images = ["mower_1.webp", "mower_1.mp4", "mower_2.webp", "mower_2.mp4"];
+
+  const handleNext = () => {
+    setCurrent(current === images.length - 1 ? 0 : current + 1);
+  };
+
+  const handlePrev = () => {
+    setCurrent(current === 0 ? images.length - 1 : current - 1);
+  };
+
   return (
     <section className="gallery" id="gallery">
-      <h2 className="section-title">Gallery</h2>
-      <div className="image-grid">
-        <img
-          src="mower_1.webp"
-          alt="slope mowing"
-          loading="lazy"
-          width="0px"
-          height="0px"
-          className="gallery-image"
-        />
-        <video
-          src="mower_1.mp4"
-          alt="slope mowing"
-          loading="lazy"
-          width="0px"
-          height="0px"
-          muted
-          autoPlay
-          loop
-          className="gallery-image"
-        />
-        
-        {/* <video src="mower_3.mp4" muted autoPlay className="gallery-image" /> */}
+              <h2 className="section-title">Gallery</h2>
 
-        <img
-          src="mower_2.webp"
-          alt="slope mowing"
-          loading="lazy"
-          width="0px"
-          height="0px"
-          className="gallery-image"
-        />
-        <video
-          src="mower_2.mp4"
-          alt="slope mowing"
-          loading="lazy"
-          width="0px"
-          height="0px"
-          muted
-          autoPlay
-          loop
-          className="gallery-image"
-        />
+      <div id="gallery-wrapper">
+        <button onClick={handleNext} className="nav-button next-button">
+          {">"}
+        </button>
+        <div>
+          {current % 2 === 0 ? (
+            <img
+              src={images[current]}
+              alt="slope mowing"
+              className="gallery-image"
+            />
+          ) : (
+            <video
+              src={images[current]}
+              alt="slope mowing"
+              muted
+              autoPlay
+              loop
+              className="gallery-image"
+            />
+          )}
+        </div>
+        <button onClick={handlePrev} className="nav-button prev-button">
+          {"<"}
+        </button>
       </div>
     </section>
   );
