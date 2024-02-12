@@ -446,6 +446,8 @@ body {
 .importance {
   background-color: #d9cca4;
   /* padding: 50px 0; */
+  padding-bottom: 4rem;
+  padding-top: 1rem;
 }
 
 .section-title {
@@ -656,5 +658,8 @@ height: 100%;
  
   .service-item h3 {
     font-size: 1.5rem;
+  }
+  .importance-item {
+  flex: 0 0 calc(50% + 100px);
   }
 }

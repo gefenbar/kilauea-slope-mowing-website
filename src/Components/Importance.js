@@ -21,14 +21,14 @@ export default function Importance() {
             </div>
           </div>
         </div>
-        <div className="importance-item">
+        {/* <div className="importance-item">
           <div className="card">
             <div className="card-header">Weed and Pest Control</div>
             <div className="card-content">
               <p>Preventing weed growth and deterring pests are vital for a healthy lawn.</p>
             </div>
           </div>
-        </div>
+        </div> */}
         <div className="importance-item">
           <div className="card">
             <div className="card-header">Regulatory Compliance</div>
