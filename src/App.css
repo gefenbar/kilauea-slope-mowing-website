@@ -155,7 +155,7 @@ html {
 
 .transformation {
   text-align: center;
-  padding-top: 4rem;
+  padding-top: 1rem;
   padding-bottom: 4rem;
   background: #d9cca4;
 }
@@ -257,7 +257,7 @@ html {
   }
 }
 .gallery {
-  padding-top: 4rem;
+  padding-top: 1rem;
   padding-bottom: 4rem;
   background-color: #5b8155;
   display: flex;
@@ -267,29 +267,21 @@ html {
 
 #gallery-wrapper {
   position: relative;
-  margin: 100px;
+  /* margin: 100px; */
 }
 #gallery-wrapper span {
   width: 33.33%;
 }
-/* .gallery-image-container {
-  width: 80%;
-  position: relative;
-  border-radius: 8px;
-  transition: transform 0.5s ease-in-out;
-} */
 
 .gallery-image {
   width: 60vw;
   height: 70vh;
   object-fit: cover;
+  /* object-position: left; */
   border-radius: 30px;
   border: solid 4px #d9cca4;
 }
 
-#centered-image {
-  object-position: left;
-}
 
 .nav-button {
   font-weight: 900;
@@ -320,7 +312,7 @@ html {
 
 /* Style the contact section */
 .contact {
-  padding-top: 4rem;
+  padding-top: 1rem;
   padding-bottom: 4rem;
 
   background: #5b8155;
@@ -372,7 +364,7 @@ html {
 
 /* Style the Services Section */
 .services {
-  padding-top: 4rem;
+  padding-top: 1rem;
   padding-bottom: 4rem;
   background: #5b8155;
 }
@@ -451,16 +443,16 @@ body {
 }
 
 /* Styling for the importance section */
-#importance {
+.importance {
   background-color: #d9cca4;
-  padding: 50px 0;
+  /* padding: 50px 0; */
 }
 
 .section-title {
   text-align: center;
   color: #333;
   font-size: 2em;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
 }
 
 /* Styling for the importance list */
@@ -629,19 +621,19 @@ height: 100%;
   .menu-open .nav-list {
     display: block;
   }
+  .gallery-image {
+    height: 50vh;
+  }  
 }
 
-@media screen and (max-width: 650px) {
-  
-}
 
 @media screen and (max-width: 450px) {
   .nav-item{
     font-size: 90%;
   }
-  .gallery-image {
+  /* .gallery-image {
     object-position: left;
-  }
+  } */
   #small-img {
     object-position: bottom;
   }

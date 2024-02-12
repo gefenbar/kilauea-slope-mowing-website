@@ -2,8 +2,8 @@ import React from "react";
 
 export default function Importance() {
   return (
-    <section className="importance" id="importance">
-      <h2 className="section-title">The Importance of Lawn Care</h2>
+    <section className="importance">
+      <h2 className="section-title">Importance of Lawn Care</h2>
       <div className="importance-list">
         <div className="importance-item">
           <div className="card">
