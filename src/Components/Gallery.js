@@ -29,13 +29,13 @@ export default function Gallery() {
           {current % 2 === 0 ? (
             <img
               src={currentImage}
-              alt="slope mowing"
+              alt="slope mowing, mower image"
               className="gallery-image"
             />
           ) : (
             <video
               src={currentImage}
-              alt="slope mowing"
+              alt="slope mowing, mowing video"
               muted
               autoPlay
               loop
