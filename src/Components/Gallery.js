@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 export default function Gallery() {
   const [current, setCurrent] = useState(0);
-  const isMobile = window.innerWidth <= 768; // Assuming mobile breakpoint is 768px
+  const isMobile = window.innerWidth <= 768; 
   const images = ["mower_1.webp", "mower_1.mp4", "mower_2.webp", "mower_2.mp4"];
 
   // Conditional check to replace mower_1.webp with mower_1_mobile.webp on mobile devices

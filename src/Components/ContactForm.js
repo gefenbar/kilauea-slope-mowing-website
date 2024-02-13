@@ -10,7 +10,6 @@ export default function ContactForm() {
       .then(response => response.json())
       .then(data => setIsInUS(data.country === 'US'))
       .catch(() => {
-        // Handle error
       });
   }, []);
 
@@ -29,7 +28,6 @@ export default function ContactForm() {
 
   return (
     <div>
-      {/* Contact Section */}
       <section className="contact" id="contact">
         <h2 className="section-title">Contact Us</h2>
         <form onSubmit={handleFormSubmit} className="contact-form">
