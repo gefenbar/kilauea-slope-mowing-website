@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import SocialLinks from "./SocialLinks.js";
 
 export default function NavBar({ toggleMenu }) {
   const [activeSection, setActiveSection] = useState("");
@@ -97,6 +98,9 @@ export default function NavBar({ toggleMenu }) {
         </li>
         
       </ul>
+      <SocialLinks isBackgroundGreen={isBackgroundGreen()} />
+
     </nav>
+    
   );
 }

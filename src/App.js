@@ -2,13 +2,14 @@ import React, { useState } from "react";
 import "./App.css";
 import { Helmet } from "react-helmet";
 import NavBar from "./Components/NavBar.js";
-import { AccessibilityWidget } from "react-accessibility";
 import Contact_Form from "./Components/ContactForm.js";
 import TransformationSection from "./Components/Transformation.js";
 import Gallery from "./Components/Gallery.js";
 import Hero from "./Components/Hero.js";
 import Services from "./Components/Services.js";
 import Importance from "./Components/Importance.js";
+import { AccessibilityWidget } from "react-accessibility";
+
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -20,7 +21,7 @@ export default function App() {
     <div className={`landing-page ${isMenuOpen ? "menu-open" : ""}`}>
       <AccessibilityWidget />
       <NavBar toggleMenu={toggleMenu} />
-
+{/* <SocialLinks/> */}
       <Helmet>
         <meta charSet="utf-8" />
         <title>Kilauea Solutions Inc.</title>
