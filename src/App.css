@@ -591,8 +591,8 @@ height: 100%;
 
   transition: all 0.1s ease;
 }
-.social-link.white-outline {
-  outline: 2px solid white; /* Adjust thickness as needed */
+.social-link.bright-outline {
+  outline: 2px solid #d9cca4; /* Adjust thickness as needed */
 }
 
 .social-link:hover {

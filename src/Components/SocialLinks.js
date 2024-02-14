@@ -4,13 +4,13 @@ export default function SocialLinks({ isBackgroundGreen }) {
     <div className="social-links">
       <a
         href="mailto:Kilaueasolutions@gmail.com"
-        className={`social-link ${isBackgroundGreen ? "white-outline" : ""}`}
+        className={`social-link ${isBackgroundGreen ? "bright-outline" : ""}`}
       >
         <img src={"email.png"} alt="Email" />
       </a>
       <a
         href="tel:+19176932632"
-        className={`social-link ${isBackgroundGreen ? "white-outline" : ""}`}
+        className={`social-link ${isBackgroundGreen ? "bright-outline" : ""}`}
       >
         <img src={"phone.png"} alt="Phone" />
       </a>
@@ -18,7 +18,7 @@ export default function SocialLinks({ isBackgroundGreen }) {
         href="https://wa.me/19176932632"
         target="_blank"
         rel="noopener noreferrer"
-        className={`social-link ${isBackgroundGreen ? "white-outline" : ""}`}
+        className={`social-link ${isBackgroundGreen ? "bright-outline" : ""}`}
       >
         <img src={"whatsapp.png"} alt="WhatsApp" />
       </a>
