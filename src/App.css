@@ -547,22 +547,22 @@ height: 100%;
 .nav-item.active a {
   color: #ffc107;
 }
-.navbar.contact-services-background {
+.navbar.green-background {
   background-color: #d9cca4;
 }
-.navbar.contact-services-background .bar {
+.navbar.green-background .bar {
   background-color: black;
 }
-.navbar.contact-services-background .menu-toggle {
+.navbar.green-background .menu-toggle {
   color: black;
 }
-.navbar.contact-services-background a {
+.navbar.green-background a {
   color: #222;
 }
-.navbar.contact-services-background .active a {
+.navbar.green-background .active a {
   color: #5b8155;
 }
-.navbar.contact-services-background a:hover {
+.navbar.green-background a:hover {
   color: #5b8155;
 }
 @media only screen and (max-width: 768px) {
@@ -633,9 +633,7 @@ height: 100%;
   .nav-item{
     font-size: 90%;
   }
-  /* .gallery-image {
-    object-position: left;
-  } */
+
   #small-img {
     object-position: bottom;
   }

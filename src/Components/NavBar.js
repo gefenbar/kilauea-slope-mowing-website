@@ -28,7 +28,7 @@ export default function NavBar({ toggleMenu }) {
     };
   }, []);
 
-  const isContactOrServices = () => {
+  const isBackgroundGreen = () => {
     return activeSection === "gallery" || activeSection === "services"  || activeSection === "contact"
   };
 
@@ -39,7 +39,7 @@ export default function NavBar({ toggleMenu }) {
   return (
     <nav
       className={`navbar ${
-        isContactOrServices() ? "contact-services-background" : ""
+        isBackgroundGreen() ? "green-background" : ""
       } ${menuOpen ? "menu-open" : ""}`}
     >
       <div className="logo">

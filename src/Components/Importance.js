@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Importance() {
   return (
-    <section className="importance">
+    <section className="importance" id="importance">
       <h2 className="section-title">Importance of Lawn Care</h2>
       <div className="importance-list">
         <div className="importance-item">
