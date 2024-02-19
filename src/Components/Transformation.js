@@ -2,7 +2,7 @@ export default function TransformationSection() {
   return (
     <section className="transformation" id="transformation">
       <h2 className="section-title animate-fade-in">
-        Witness the Transformation
+        Witness The Transformation
       </h2>
       <div className="before-after">
         <div className="before-after-container animate-slide-in">

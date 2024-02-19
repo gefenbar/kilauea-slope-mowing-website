@@ -3,7 +3,7 @@ import React from "react";
 export default function FireHazard() {
   return (
     <section className="fire-hazard" id="fire-hazard">
-      <h2 className="section-title">Fire prevention and management</h2>
+      <h2 className="section-title">Fire Prevention And Management</h2>
       <div className="fire-hazard-list">
         <div className="fire-hazard-item">
           <div className="card">
