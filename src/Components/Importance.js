@@ -7,45 +7,12 @@ export default function Importance() {
       <div className="importance-list">
         <div className="importance-item">
           <div className="card">
-            <div className="card-header">Fire Prevention</div>
+            <div className="card-header">Fire prevention and management</div>
             <div className="card-content">
-              <p>Reducing fire hazards like Guinea grass ensures safer landscapes.</p>
+              <p><span>Guinea grass</span> taking over open fields can be a major <span>fire hazard</span>, especially in the dryer months but not only, as Guinea grass will burn when it's green. At <span>Kilauea Solutions Inc</span> we make fighting Guinea grass <span>easier and cheaper</span></p>
             </div>
           </div>
         </div>
-        <div className="importance-item">
-          <div className="card">
-            <div className="card-header">Lawn Health</div>
-            <div className="card-content">
-              <p>Regular maintenance promotes lush lawns, enhancing property aesthetics.</p>
-            </div>
-          </div>
         </div>
-        {/* <div className="importance-item">
-          <div className="card">
-            <div className="card-header">Weed and Pest Control</div>
-            <div className="card-content">
-              <p>Preventing weed growth and deterring pests are vital for a healthy lawn.</p>
-            </div>
-          </div>
-        </div> */}
-        <div className="importance-item">
-          <div className="card">
-            <div className="card-header">Regulatory Compliance</div>
-            <div className="card-content">
-              <p>Adhering to local regulations ensures landowners avoid penalties.</p>
-            </div>
-          </div>
-        </div>
-        <div className="importance-item">
-          <div className="card">
-            <div className="card-header">Erosion Control</div>
-            <div className="card-content">
-              <p>Maintaining landscapes, especially on slopes, helps prevent erosion.</p>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
-  );
-};
+)}

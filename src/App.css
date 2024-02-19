@@ -504,9 +504,13 @@ height: 100%;
 
 .card-content p {
   font-size: 1.2rem;
-
   line-height: 1.6;
 }
+.card-content p span{
+  font-size: larger;
+  color: #ffc107;
+}
+
 
 .navbar {
   display: flex;
