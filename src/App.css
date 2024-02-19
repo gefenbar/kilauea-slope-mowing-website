@@ -442,8 +442,8 @@ body {
   font-family: Arial, sans-serif;
 }
 
-/* Styling for the importance section */
-.importance {
+/* Styling for the fire-hazard section */
+.fire-hazard {
   background-color: #d9cca4;
   /* padding: 50px 0; */
   padding-bottom: 4rem;
@@ -457,15 +457,15 @@ body {
   /* margin-bottom: 50px; */
 }
 
-/* Styling for the importance list */
-.importance-list {
+/* Styling for the fire-hazard list */
+.fire-hazard-list {
   display: flex;
   flex-wrap: wrap;
   padding: 10px;
   justify-content: space-around;
 }
 
-.importance-item {
+.fire-hazard-item {
   flex: 0 0 calc(50% - 50px);
   margin: 10px;
 }
@@ -483,7 +483,7 @@ height: 100%;
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
-
+/* 
 .card-header {
   font-size: 1.3rem;
   background-color: #ececec;
@@ -491,7 +491,7 @@ height: 100%;
   font-weight: bold;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-}
+} */
 
 .card-content {
   font-size: 1.3rem;
@@ -702,7 +702,7 @@ height: 100%;
   .service-item h3 {
     font-size: 1.5rem;
   }
-  .importance-item {
+  .fire-hazard-item {
   flex: 0 0 calc(50% + 100px);
   }
 }

@@ -70,13 +70,12 @@ export default function NavBar({ toggleMenu }) {
         >
           <a href="#services">Services</a>
         </li>
+        
         <li
-          className={`nav-item ${
-            activeSection === "transformation" ? "active" : ""
-          }`}
+          className={`nav-item ${activeSection === "fire-hazard" ? "active" : ""}`}
           onClick={handleMenuItemClick}
         >
-          <a href="#transformation">Transformation</a>
+          <a href="#fire-hazard">Fire Hazard</a>
         </li>
         <li
           className={`nav-item ${activeSection === "gallery" ? "active" : ""}`}
@@ -85,10 +84,12 @@ export default function NavBar({ toggleMenu }) {
           <a href="#gallery">Gallery</a>
         </li>
         <li
-          className={`nav-item ${activeSection === "importance" ? "active" : ""}`}
+          className={`nav-item ${
+            activeSection === "transformation" ? "active" : ""
+          }`}
           onClick={handleMenuItemClick}
         >
-          <a href="#importance">Importance</a>
+          <a href="#transformation">Transformation</a>
         </li>
         <li
           className={`nav-item ${activeSection === "contact" ? "active" : ""}`}

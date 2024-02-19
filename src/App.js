@@ -7,7 +7,7 @@ import TransformationSection from "./Components/Transformation.js";
 import Gallery from "./Components/Gallery.js";
 import Hero from "./Components/Hero.js";
 import Services from "./Components/Services.js";
-import Importance from "./Components/Importance.js";
+import FireHazard from "./Components/FireHazard.js";
 import { AccessibilityWidget } from "react-accessibility";
 
 export default function App() {
@@ -40,9 +40,9 @@ Transforming landscapes with precision. Get your free estimate today!"
       </Helmet>
       <Hero />
       <Services />
-      <TransformationSection />
+      <FireHazard/>
       <Gallery />
-      <Importance/>
+      <TransformationSection />
       <Contact_Form />
       <p className="contact-info">
         For inquiries and estimates, contact us at{" "}
