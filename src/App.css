@@ -233,7 +233,7 @@ section {
   border-radius: 8px;
   transition: transform 0.5s ease-in-out;
   max-width: 500px;
-  border: solid 4px #d9cca4;
+  border: solid 4px #5b8155;
 }
 
 .image-container:hover .before-image,
@@ -308,7 +308,7 @@ section {
   gap: 20px;
   max-width: 1000px;
   margin: 0 auto;
-  padding: 10px;
+  padding: 20px;
 }
 
 .testimonial {
@@ -327,9 +327,9 @@ section {
   left: -10px;
   width: 20px;
   height: 20px;
-  background-color: #fff;
+  background-color: #d9cca4;
   border-top-left-radius: 8px;
-  border: 1px solid #ccc;
+  border: 1px solid #666;
 }
 
 .testimonial:after {
@@ -339,9 +339,9 @@ section {
   right: -10px;
   width: 20px;
   height: 20px;
-  background-color: #fff;
+  background-color: #d9cca4;
   border-bottom-right-radius: 8px;
-  border: 1px solid #ccc;
+  border: 1px solid #666;
 }
 
 .testimonial:hover {
@@ -384,14 +384,14 @@ font-size: small;}
   border: none;
   font-size: 2rem;
   cursor: pointer;
-  transition: color 0.5s ease;
+  transition: background-color 0.5s ease;
   background-color: #d9cca4;
-  color: #222;
+  color: #5b8155;
   border-radius: 150px;
 }
 
 .nav-button:hover {
-  color: #5b8155;
+  background-color:#ffc107;
 }
 
 .next-button {
@@ -652,10 +652,10 @@ body {
   background-color: #5b8155;
 }
 .navbar.green-background .bar {
-  background-color: #d9cca4;
+  background-color: #ddd;
 }
 .navbar.green-background .menu-toggle {
-  color: #d9cca4;
+  color: #ddd;
 }
 .navbar.green-background a {
   color: #eee;
@@ -687,18 +687,18 @@ body {
   align-items: center;
   text-decoration: none;
   /* color: #333; */
-  outline: 3px solid #5b8155; /* Adjust color and width */
+  outline: 3px solid #d9cca4; /* Adjust color and width */
   border-radius: 300px;
-
   transition: all 0.1s ease;
 }
 .social-link.bright-outline {
-  outline: 2px solid #d9cca4; /* Adjust thickness as needed */
+  outline: 3px solid #5b8155; /* Adjust thickness as needed */
 }
 
 .social-link:hover {
-  outline: none; /* Adjust color and width */
+  outline:  3px solid #ffc107;/* Adjust color and width */
   border-radius: 300px;
+  /* border-color: #ffc107; */
 }
 
 .social-link img {
@@ -744,14 +744,14 @@ body {
     margin-right: 10px;
     margin-top: 10px;
     cursor: pointer;
-    color: #fff;
+    color: #222;
   }
 
   .bar {
     display: block;
     width: 25px;
     height: 3px;
-    background-color: #fff;
+    background-color: #222;
     margin: 5px 0;
   }
 
