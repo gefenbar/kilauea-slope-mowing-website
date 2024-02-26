@@ -426,7 +426,8 @@ section {
   transition: font-weight 0.3s ease;
 }
 .contact-info a:hover {
-  font-weight: bold;
+  /* font-weight: bold; */
+  color: #ffc107;
 }
 
 #submit_message {
