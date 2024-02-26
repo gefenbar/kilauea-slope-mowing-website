@@ -30,7 +30,8 @@ export default function NavBar({ toggleMenu }) {
   }, []);
 
   const isBackgroundGreen = () => {
-    return activeSection === "gallery" || activeSection === "services"  || activeSection === "contact"
+    return activeSection === "gallery" || activeSection === "transformation" 
+    
   };
 
   const handleMenuItemClick = () => {

@@ -7,9 +7,12 @@ body {
   overflow-x: hidden;
 }
 html {
-  background-color: #d9cca4 !important;
+  background-color: #d9cca4;
+  width: 100vw;
 }
-
+section {
+  width: 100vw;
+}
 /* Define some variables for colors and fonts */
 :root {
   --primary-color: #d9cca4;
@@ -25,13 +28,16 @@ html {
 
 /* Style the hero section */
 .hero {
-  position: relative;
+  /* position: relative; */
   height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  background-image: url("../public/mower_1.webp");
+  background-size: cover;
 }
 .hero p {
   font-size: 24px;
@@ -56,21 +62,21 @@ html {
   font-weight: 600;
   text-shadow: 2px 2px 2px rgb(0 0 0);
 }
+/* div section{background-color:blue!important;} */
+/* .hero-container { */
+/* position: absolute; */
+/* overflow: hidden; */
+/* } */
 
-.hero-container {
-  position: absolute;
-  overflow: hidden;
-}
-
-.hero img {
+/* .hero img {
   position: relative;
-  width: 70vw;
-  height: 80vh;
-  object-fit: cover;
-  border-radius: 30px;
-  margin-top: 8vh;
-  border: solid 6px #5b8155;
-}
+  width: 100vw;
+  height: 100vh;
+  object-fit: fill; */
+/* border-radius: 30px; */
+/* margin-top: 8vh; */
+/* border: solid 6px #5b8155; */
+/* } */
 
 .hero-overlay {
   position: relative;
@@ -118,7 +124,7 @@ html {
   font-size: 1.25rem;
   font-weight: bold;
   color: black;
-  background: var(--primary-color);
+  background: #d9cca4;
   cursor: pointer;
   transition: transform 0.3s;
   margin-bottom: 1vh;
@@ -143,10 +149,7 @@ html {
 }
 
 /* Style the before-after container */
-.before-after-container {
-  max-width: 800px;
-  margin: 0 auto;
-}
+
 .before-after p {
   font-weight: 900;
   font-size: 1.2rem;
@@ -157,7 +160,7 @@ html {
   text-align: center;
   padding-top: 1rem;
   padding-bottom: 4rem;
-  background: #d9cca4;
+  background: #5b8155;
 }
 
 .section-title {
@@ -166,7 +169,10 @@ html {
   text-align: center;
   margin-bottom: 2rem;
 }
-
+/* .before-after-container {
+  max-width: 800px;
+  margin: 0 auto;
+} */
 .before-after-container {
   display: flex;
   flex-wrap: wrap;
@@ -174,10 +180,12 @@ html {
   gap: 10px;
   max-width: 800px; /* Adjusted max-width for responsiveness */
   margin: 0 auto;
-  background-color: #000;
+  /* background-color: #d9cca4; */
   padding: 50px;
-  background-image: repeating-linear-gradient(300deg, #d9cca4, #ececec 6%)
+  /* border-radius: 20px; */
 }
+
+/* background-image: repeating-linear-gradient(300deg, #d9cca4, #ececec 6%) */
 
 .before-after p {
   font-weight: 900;
@@ -213,7 +221,7 @@ html {
   justify-content: center;
   opacity: 0.9;
   transition: opacity 0.5s;
-}
+  }
 
 .overlay-text {
   color: #fff;
@@ -225,12 +233,12 @@ html {
   border-radius: 8px;
   transition: transform 0.5s ease-in-out;
   max-width: 500px;
-  border: solid 4px #5b8155;
+  border: solid 4px #d9cca4;
 }
 
 .image-container:hover .before-image,
 .image-container:hover .after-image {
-  transform: scale(1.1);
+  transform: scale(1.15);
 }
 
 .animate-slide-in {
@@ -282,7 +290,6 @@ html {
   border: solid 4px #d9cca4;
 }
 
-
 .nav-button {
   font-weight: 900;
   position: absolute;
@@ -291,15 +298,14 @@ html {
   border: none;
   font-size: 2rem;
   cursor: pointer;
-  transition:   color 0.5s ease;
-  background-color:#d9cca4 ;
+  transition: color 0.5s ease;
+  background-color: #d9cca4;
   color: #222;
   border-radius: 150px;
 }
 
 .nav-button:hover {
-  color:#5b8155;
-
+  color: #5b8155;
 }
 
 .next-button {
@@ -315,7 +321,7 @@ html {
   padding-top: 1rem;
   padding-bottom: 4rem;
 
-  background: #5b8155;
+  background: #d9cca4;
   /* height: 75vh; */
 }
 
@@ -331,7 +337,7 @@ html {
 .contact button {
   width: 150px;
   align-self: center;
-  background-color: #d9cca4;
+  background-color: #5b8155;
 }
 .contact input,
 .contact textarea {
@@ -366,7 +372,7 @@ html {
 .services {
   padding-top: 1rem;
   padding-bottom: 4rem;
-  background: #5b8155;
+  background: #d9cca4;
 }
 
 /* Style the Services List */
@@ -377,11 +383,15 @@ html {
 }
 
 .service-item {
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1), 1px 1px 1px rgba(0, 0, 0, 0.05),
+    1px 1px 1px rgba(0, 0, 0, 0.1), 1px 1px 1px rgba(0, 0, 0, 0.1),
+    1px 1px 1px rgba(0, 0, 0, 0.15), 1px 1px 64px rgba(0, 0, 0, 0.15);
+
   width: 45%;
   margin: 1rem 0;
   padding: 1.5rem;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
   transition: transform 0.3s ease-in-out;
   text-align: center;
 }
@@ -398,7 +408,7 @@ html {
 
 .service-item p {
   font-size: 1.2rem;
-  color: #ccc;
+  color: #5b8155;
 }
 
 /* Style the Contact Info */
@@ -408,15 +418,15 @@ html {
   margin-left: 1%;
   padding: 10px;
   margin: 0;
-  background-color: #d9cca4;
+  background-color: #5b8155;
 }
 .contact-info a {
-  color: #5b8155;
-text-decoration: none;
-transition: font-weight 0.3s ease;
+  color: #d9cca4;
+  text-decoration: none;
+  transition: font-weight 0.3s ease;
 }
 .contact-info a:hover {
-font-weight: bold;
+  font-weight: bold;
 }
 
 #submit_message {
@@ -472,16 +482,16 @@ body {
 
 /* Styling for the card */
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   border-radius: 5px;
   background-color: #5b8155;
   color: #222;
-height: 100%;
+  height: 100%;
 }
 
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 /* 
 .card-header {
@@ -506,11 +516,10 @@ height: 100%;
   font-size: 1.2rem;
   line-height: 1.6;
 }
-.card-content p span{
+.card-content p span {
   font-size: larger;
   color: #ffc107;
 }
-
 
 .navbar {
   display: flex;
@@ -604,7 +613,6 @@ height: 100%;
   border-radius: 300px;
 }
 
-
 .social-link img {
   width: 30px; /* Set the width of the image */
   height: 30px; /* Set the height of the image */
@@ -670,12 +678,11 @@ height: 100%;
   }
   .gallery-image {
     height: 50vh;
-  }  
+  }
 }
 
-
 @media screen and (max-width: 450px) {
-  .nav-item{
+  .nav-item {
     font-size: 90%;
   }
 
@@ -698,11 +705,11 @@ height: 100%;
     padding-right: 5%;
     font-size: 15px;
   }
- 
+
   .service-item h3 {
     font-size: 1.5rem;
   }
   .fire-hazard-item {
-  flex: 0 0 calc(50% + 100px);
+    flex: 0 0 calc(50% + 100px);
   }
 }
