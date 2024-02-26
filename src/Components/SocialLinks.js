@@ -6,13 +6,13 @@ export default function SocialLinks({ isBackgroundGreen }) {
         href="mailto:Kilaueasolutions@gmail.com"
         className={`social-link ${isBackgroundGreen ? "bright-outline" : ""}`}
       >
-        <img src={"email.png"} alt="Email" />
+        <img src={"email.webp"} alt="Email" />
       </a>
       <a
         href="tel:+19176932632"
         className={`social-link ${isBackgroundGreen ? "bright-outline" : ""}`}
       >
-        <img src={"phone.png"} alt="Phone" />
+        <img src={"phone.webp"} alt="Phone" />
       </a>
       <a
         href="https://wa.me/19176932632"
@@ -20,7 +20,7 @@ export default function SocialLinks({ isBackgroundGreen }) {
         rel="noopener noreferrer"
         className={`social-link ${isBackgroundGreen ? "bright-outline" : ""}`}
       >
-        <img src={"whatsapp.png"} alt="WhatsApp" />
+        <img src={"whatsapp.webp"} alt="WhatsApp" />
       </a>
     </div>
   );

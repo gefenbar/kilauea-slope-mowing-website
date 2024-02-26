@@ -29,11 +29,13 @@ export default function Gallery() {
           {current % 2 === 0 ? (
             <img
               src={currentImage}
+              // loading="eager"
               alt="slope mowing, mower image"
               className="gallery-image"
             />
           ) : (
             <video
+            // loading="eager"
               src={currentImage}
               alt="slope mowing, mowing video"
               muted
