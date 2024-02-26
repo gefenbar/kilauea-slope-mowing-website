@@ -30,7 +30,7 @@ export default function NavBar({ toggleMenu }) {
   }, []);
 
   const isBackgroundGreen = () => {
-    return activeSection === "gallery" || activeSection === "transformation" 
+    return activeSection === "gallery"  ||  activeSection === "hero"  ||  activeSection === "testimonials" 
     
   };
 
@@ -77,6 +77,12 @@ export default function NavBar({ toggleMenu }) {
           onClick={handleMenuItemClick}
         >
           <a href="#fire-hazard">Fire Hazard</a>
+        </li>
+        <li
+          className={`nav-item ${activeSection === "testimonials" ? "active" : ""}`}
+          onClick={handleMenuItemClick}
+        >
+          <a href="#testimonials">Testimonials</a>
         </li>
         <li
           className={`nav-item ${activeSection === "gallery" ? "active" : ""}`}
