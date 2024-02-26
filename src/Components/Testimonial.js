@@ -3,7 +3,7 @@ import React from 'react';
 const testimonials = [
   {
     name: 'John Smith',
-    location: 'Kauai, HI',
+    location: 'Lihue, Kauai',
     quote: 'These guys are amazing! They transformed my overgrown slope into a beautiful piece of paradise. Highly recommend!',
   },
   {
