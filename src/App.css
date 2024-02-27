@@ -196,11 +196,14 @@ section {
 .before-image,
 .after-image {
   cursor: pointer;
-
   width: 100%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.5s ease-in-out;
   height: 100%;
+}
+img.before-image, img.after-image {
+  /* height: 379px; */
+  width: 500px;
 }
 
 .section-title {
@@ -369,6 +372,10 @@ section {
 @media (max-width: 768px) {
   .testimonial-container {
     grid-template-columns: 1fr;
+  }
+  img.before-image, img.after-image {
+    /* height: 232px; */
+    width: 304px;
   }
 }
 @media (min-width:768px) and (max-width: 900px) {
