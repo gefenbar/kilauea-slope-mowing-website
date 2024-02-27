@@ -22,7 +22,6 @@ export default function App() {
     <div className={`landing-page ${isMenuOpen ? "menu-open" : ""}`}>
       <AccessibilityWidget />
       <NavBar toggleMenu={toggleMenu} />
-{/* <SocialLinks/> */}
       <Helmet>
         <meta charSet="utf-8" />
         <title>Kilauea Solutions Inc.</title>
@@ -37,7 +36,6 @@ Transforming landscapes with precision. Get your free estimate today!"
         />
         <meta name="author" content="Niv" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        {/* Add more meta tags as needed for your specific content */}
       </Helmet>
       <Hero />
       <Services />
