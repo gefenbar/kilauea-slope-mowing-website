@@ -13,27 +13,35 @@ export default function Gallery() {
   ];
 
   // Preload next and previous images/videos based on media type and mobile state
-  const [preloaded, setPreloaded] = useState([]);
-
   useEffect(() => {
     const nextIndex = (current + 1) % media.length;
     const prevIndex = (current - 1 + media.length) % media.length;
+    const nextMedia = isMobile
+      ? media[nextIndex].mobileSrc
+      : media[nextIndex].src;
+    const prevMedia = isMobile
+      ? media[prevIndex].mobileSrc
+      : media[prevIndex].src;
 
-    const nextMedia = isMobile ? media[nextIndex].mobileSrc : media[nextIndex].src;
-    const prevMedia = isMobile ? media[prevIndex].mobileSrc : media[prevIndex].src;
+    const preloadImage = (url) => {
+      const img = new Image();
+      img.src = url;
+    };
 
-    setPreloaded([
-      { src: nextMedia, isVideo: media[nextIndex].isVideo },
-      { src: prevMedia, isVideo: media[prevIndex].isVideo },
-    ]);
-  }, [current, isMobile]);
+    preloadImage(nextMedia);
+    preloadImage(prevMedia);
+  }, [current, isMobile, media]);
 
   const handleNext = () => {
-    setCurrent((prevCurrent) => (prevCurrent === media.length - 1 ? 0 : prevCurrent + 1));
+    setCurrent((prevCurrent) =>
+      prevCurrent === media.length - 1 ? 0 : prevCurrent + 1
+    );
   };
 
   const handlePrev = () => {
-    setCurrent((prevCurrent) => (prevCurrent === 0 ? media.length - 1 : prevCurrent - 1));
+    setCurrent((prevCurrent) =>
+      prevCurrent === 0 ? media.length - 1 : prevCurrent - 1
+    );
   };
 
   return (
