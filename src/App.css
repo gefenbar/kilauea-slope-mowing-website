@@ -263,6 +263,7 @@ section {
     opacity: 1;
   }
 }
+
 .gallery {
   padding-top: 1rem;
   padding-bottom: 4rem;
@@ -273,33 +274,32 @@ section {
 }
 
 #gallery-wrapper {
-  position: relative; /* Necessary for positioning */
+  position: relative;
 }
 
-#gallery-wrapper span { 
-  width: 33.33%;
-  position: relative; /* Added for inner element positioning */
+.image-wrapper {
+  position: relative;
+}
+
+.loading-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
 }
 
 .gallery-image {
   width: 60vw;
   height: 70vh;
-  object-fit: cover; 
+  object-fit: cover;
   border-radius: 30px;
+  position: relative; /* Make room for the pseudo-element */
   border: solid 4px #d9cca4;
 }
 
-/* Loading message styles */
-#gallery-wrapper span::after {
-  content: "Loading...";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 18px; 
-  color: #fff; /* Or a color that contrasts with your background */
-  z-index: -1;  /* Ensure it's behind the image/video */
-}
 
 
 .testimonials {
