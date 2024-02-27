@@ -12,26 +12,23 @@ export default function Gallery() {
     { src: "mower_2.mp4", isVideo: true },
   ];
 
-  // Preload next and previous images/videos based on media type and mobile state
-  useEffect(() => {
-    const nextIndex = (current + 1) % media.length;
-    const prevIndex = (current - 1 + media.length) % media.length;
-    const nextMedia = isMobile
-      ? media[nextIndex].mobileSrc
-      : media[nextIndex].src;
-    const prevMedia = isMobile
-      ? media[prevIndex].mobileSrc
-      : media[prevIndex].src;
+ // Preload next and previous images/videos based on media type and mobile state
+useEffect(() => {
+  const nextIndex = (current + 1) % media.length;
+  const prevIndex = (current - 1 + media.length) % media.length;
+  const nextMedia = isMobile ? media[nextIndex].mobileSrc : media[nextIndex].src;
+  const prevMedia = isMobile ? media[prevIndex].mobileSrc : media[prevIndex].src;
 
-    const preloadImage = (url) => {
+  const preloadImage = (url) => {
+    if (url) {
       const img = new Image();
       img.src = url;
-    };
+    }
+  };
 
-    preloadImage(nextMedia);
-    preloadImage(prevMedia);
-  }, [current, isMobile, media]);
-
+  preloadImage(nextMedia);
+  preloadImage(prevMedia);
+}, [current, isMobile, media]);
   const handleNext = () => {
     setCurrent((prevCurrent) =>
       prevCurrent === media.length - 1 ? 0 : prevCurrent + 1
