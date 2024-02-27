@@ -51,7 +51,7 @@ export default function Gallery() {
       <h2 className="section-title">Gallery</h2>
       <div id="gallery-wrapper">
         <button onClick={handleNext} className="nav-button next-button">
-          {" >"}
+          {">"}
         </button>
         <div className="image-wrapper">
           {isLoading && <div className="loading-text">Loading...</div>}

@@ -286,7 +286,6 @@ section {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /* background-color: #d9cca412; */
   padding: 0.5rem 1rem;
   border-radius: 5px;
 }
