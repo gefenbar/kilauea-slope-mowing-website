@@ -15,7 +15,9 @@ export default function Gallery() {
   useEffect(() => {
     setIsLoading(true);
     const nextIndex = (current + 1) % media.length;
-    const nextMedia = isMobile ? media[nextIndex].mobileSrc : media[nextIndex].src;
+    const nextMedia = isMobile
+      ? media[nextIndex].mobileSrc
+      : media[nextIndex].src;
 
     const preloadMedia = (url, isVideo) => {
       if (isVideo) {
@@ -33,11 +35,15 @@ export default function Gallery() {
   }, [current, isMobile, media]);
 
   const handleNext = () => {
-    setCurrent((prevCurrent) => (prevCurrent === media.length - 1 ? 0 : prevCurrent + 1));
+    setCurrent((prevCurrent) =>
+      prevCurrent === media.length - 1 ? 0 : prevCurrent + 1
+    );
   };
 
   const handlePrev = () => {
-    setCurrent((prevCurrent) => (prevCurrent === 0 ? media.length - 1 : prevCurrent - 1));
+    setCurrent((prevCurrent) =>
+      prevCurrent === 0 ? media.length - 1 : prevCurrent - 1
+    );
   };
 
   return (
@@ -50,9 +56,20 @@ export default function Gallery() {
         <div className="image-wrapper">
           {isLoading && <div className="loading-text">Loading...</div>}
           {media[current].isVideo ? (
-            <video src={media[current].src} alt="slope mowing, mowing video" muted autoPlay loop className="gallery-image" />
+            <video
+              src={media[current].src}
+              alt="slope mowing, mowing video"
+              muted
+              autoPlay
+              loop
+              className="gallery-image"
+            />
           ) : (
-            <img src={isMobile ? media[current].mobileSrc : media[current].src} alt="slope mowing, mower image" className="gallery-image" />
+            <img
+              src={isMobile ? media[current].mobileSrc : media[current].src}
+              alt="slope mowing, mower image"
+              className="gallery-image"
+            />
           )}
         </div>
         <button onClick={handlePrev} className="nav-button prev-button">
