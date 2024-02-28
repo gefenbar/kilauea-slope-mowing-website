@@ -6,6 +6,7 @@ body {
   background-color: #d9cca4;
   overflow-x: hidden;
 }
+
 html {
   background-color: #d9cca4;
   width: 100%;
@@ -707,7 +708,14 @@ body {
 .social-link.bright-outline {
   outline: 3px solid #5b8155; /* Adjust thickness as needed */
 }
-
+.accessibility{
+  outline: 3px solid #d9cca4; /* Adjust thickness as needed */
+  fill: #d9cca4;
+}
+.accessibility.bright-outline{
+  outline: 3px solid #5b8155; /* Adjust thickness as needed */
+  fill: #5b8155;
+}
 .social-link:hover {
   outline:  3px solid #ffc107;/* Adjust color and width */
   border-radius: 300px;
@@ -795,7 +803,7 @@ body {
     grid-template-columns: none;
   }
   .gWJfyP,
-  .fNicyq {
+  .accessibility {
     font-size: small;
   }
   * {
