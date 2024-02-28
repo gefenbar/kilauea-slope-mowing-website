@@ -79,12 +79,12 @@ export default function NavBar({ toggleMenu }) {
         >
           <a href="#fire-hazard">Fire Hazard</a>
         </li>
-        <li
+        {/* <li
           className={`nav-item ${activeSection === "testimonials" ? "active" : ""}`}
           onClick={handleMenuItemClick}
         >
           <a href="#testimonials">Testimonials</a>
-        </li>
+        </li> */}
         <li
           className={`nav-item ${activeSection === "gallery" ? "active" : ""}`}
           onClick={handleMenuItemClick}
