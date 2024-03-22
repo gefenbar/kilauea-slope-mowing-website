@@ -28,7 +28,7 @@ section {
 
 /* Style the hero section */
 .hero {
-  /* position: relative; */
+  /* position: relative; */  /* Uncomment this if you need layering elements */
   height: 100vh;
   width: 100%;
   display: flex;
@@ -38,7 +38,9 @@ section {
   text-align: center;
   background-image: url("../public/mower_1.webp");
   background-size: cover;
+  background-attachment: fixed; 
 }
+
 .hero p {
   font-size: 24px;
   color: var(--primary-color);
