@@ -780,6 +780,9 @@ body {
   .gallery-image {
     height: 50vh;
   }
+  .service-item p{
+    font-size: 1rem;
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -813,4 +816,5 @@ body {
   .fire-hazard-item {
     flex: 0 0 calc(50% + 100px);
   }
+ 
 }
