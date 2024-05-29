@@ -36,22 +36,7 @@ Transforming landscapes with precision. Get your free estimate today!"
         />
         <meta name="author" content="Niv" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-              {/* Schema.org markup for Organization */}
-              <script type="application/ld+json">
-        {JSON.stringify({
-       "@context": "http://schema.org/",
-       "@type": "Organization",
-       "name": "Kilauea Solutions Inc.",
-       "logo": "https://kauaislopemowing.com/logo_1.webp",
-       "url": "https://kauaislopemowing.com/",
-       "address": {
-         "@type": "PostalAddress",
-         "addressRegion": "Hawaii, Kauai",
-         "addressCountry": "United States"
-       },
-       "sameAs": []
-        })}
-      </script>
+             
       </Helmet>
       <Hero />
       <Services />
