@@ -26,6 +26,11 @@ export default function Gallery() {
             setIsLoading(false);
             document.body.removeChild(video); // Remove the video element after loading
           };
+          video.onerror = () => {
+            setIsLoading(false);
+            console.error("Failed to load video:", url);
+            // Handle error, e.g., show a placeholder image instead
+          };
           video.src = url;
           video.style.display = "none"; // Hide the video element
           document.body.appendChild(video); // Append the video to start loading
@@ -35,12 +40,17 @@ export default function Gallery() {
             setIsLoading(false);
             document.body.removeChild(img); // Remove the image element after loading
           };
+          img.onerror = () => {
+            setIsLoading(false);
+            console.error("Failed to load image:", url);
+            // Handle error, e.g., show a different image
+          };
           img.src = url;
           img.style.display = "none"; // Hide the image element
           document.body.appendChild(img); // Append the image to start loading
         }
       };
-  
+      
       preloadMedia(nextMedia, media[nextIndex].isVideo);
     }
   }, [current, isMobile, media]);
