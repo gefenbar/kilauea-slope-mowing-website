@@ -4,58 +4,38 @@ export default function Gallery() {
   const [current, setCurrent] = useState(0);
   const [isLoading, setIsLoading] = useState(false);
   const isMobile = window.innerWidth <= 768;
-
+  
   const media = [
     { src: "mower_1.webp", mobileSrc: "mower_1_mobile.webp", isVideo: false },
     { src: "mower_1.mp4", isVideo: true },
     { src: "mower_2.webp", mobileSrc: "mower_2_mobile.webp", isVideo: false },
     { src: "mower_2.mp4", isVideo: true },
   ];
+
   useEffect(() => {
     setIsLoading(true);
     const nextIndex = (current + 1) % media.length;
-    const nextMedia = isMobile
-      ? media[nextIndex].mobileSrc
-      : media[nextIndex].src;
-  
+    const nextMedia = isMobile ? media[nextIndex].mobileSrc : media[nextIndex].src;
+
     if (nextMedia) {
       const preloadMedia = (url, isVideo) => {
-        if (isVideo) {
-          const video = document.createElement("video");
-          video.onloadeddata = () => {
-            setIsLoading(false);
-            document.body.removeChild(video); // Remove the video element after loading
-          };
-          video.src = url;
-          video.style.display = "none"; // Hide the video element
-          document.body.appendChild(video); // Append the video to start loading
-        } else {
-          const img = new Image();
-          img.onload = () => {
-            setIsLoading(false);
-            document.body.removeChild(img); // Remove the image element after loading
-          };
-          img.src = url;
-          img.style.display = "none"; // Hide the image element
-          document.body.appendChild(img); // Append the image to start loading
-        }
+        const element = isVideo ? document.createElement("video") : new Image();
+
+        element.onload = () => {
+          setIsLoading(false);
+        };
+        element.src = url;
       };
-  
       preloadMedia(nextMedia, media[nextIndex].isVideo);
     }
   }, [current, isMobile, media]);
-  
 
   const handleNext = () => {
-    setCurrent((prevCurrent) =>
-      prevCurrent === media.length - 1 ? 0 : prevCurrent + 1
-    );
+    setCurrent((prevCurrent) => (prevCurrent === media.length - 1 ? 0 : prevCurrent + 1));
   };
 
   const handlePrev = () => {
-    setCurrent((prevCurrent) =>
-      prevCurrent === 0 ? media.length - 1 : prevCurrent - 1
-    );
+    setCurrent((prevCurrent) => (prevCurrent === 0 ? media.length - 1 : prevCurrent - 1));
   };
 
   return (
