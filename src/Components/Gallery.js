@@ -7,7 +7,7 @@ export default function Gallery() {
 
   const media = [
     { src: "mower_1.webp", mobileSrc: "mower_1_mobile.webp", isVideo: false },
-    { src: "mower_1.mp4", isVideo: true },
+    { src: "mower_2.mp4", isVideo: true },
     { src: "mower_2.webp", mobileSrc: "mower_2_mobile.webp", isVideo: false },
     { src: "mower_2.mp4", isVideo: true },
   ];
