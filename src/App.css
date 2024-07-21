@@ -28,7 +28,6 @@ section {
 
 /* Style the hero section */
 .hero {
-  /* position: relative; */  /* Uncomment this if you need layering elements */
   height: 100vh;
   width: 100%;
   display: flex;
@@ -64,21 +63,7 @@ section {
   font-weight: 600;
   text-shadow: 2px 2px 2px rgb(0 0 0);
 }
-/* div section{background-color:blue!important;} */
-/* .hero-container { */
-/* position: absolute; */
-/* overflow: hidden; */
-/* } */
 
-/* .hero img {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-  object-fit: fill; */
-/* border-radius: 30px; */
-/* margin-top: 8vh; */
-/* border: solid 6px #5b8155; */
-/* } */
 
 .hero-overlay {
   position: relative;
@@ -132,10 +117,9 @@ section {
   margin-bottom: 1vh;
 }
 
-/* Add a hover effect to the button */
 .cta-button:hover {
   transform: scale(1.1);
-  background-color: #ffc107; /* Change to your preferred hover color */
+  background-color: #ffc107;
 }
 .cta-button a {
   text-decoration: none;
@@ -171,23 +155,17 @@ section {
   text-align: center;
   margin-bottom: 2rem;
 }
-/* .before-after-container {
-  max-width: 800px;
-  margin: 0 auto;
-} */
+
 .before-after-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
-  max-width: 800px; /* Adjusted max-width for responsiveness */
+  max-width: 800px; 
   margin: 0 auto;
-  /* background-color: #d9cca4; */
-  padding:0 50px 50px 50px;
-  /* border-radius: 20px; */
-}
 
-/* background-image: repeating-linear-gradient(300deg, #d9cca4, #ececec 6%) */
+  padding:0 50px 50px 50px;
+}
 
 .before-after p {
   font-weight: 900;
@@ -596,15 +574,6 @@ body {
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
-/* 
-.card-header {
-  font-size: 1.3rem;
-  background-color: #ececec;
-  padding: 10px;
-  font-weight: bold;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-} */
 
 .card-content {
   font-size: 1.3rem;
