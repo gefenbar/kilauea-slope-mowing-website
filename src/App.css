@@ -183,7 +183,7 @@ section {
   max-width: 800px; /* Adjusted max-width for responsiveness */
   margin: 0 auto;
   /* background-color: #d9cca4; */
-  padding: 50px;
+  padding:0 50px 50px 50px;
   /* border-radius: 20px; */
 }
 
