@@ -53,6 +53,14 @@ export default function ContactForm() {
             field="_replyto"
             errors={state.errors}
           />
+            <input
+            id="phone"
+            type="tel"
+            name="phone"
+            placeholder="Your Phone Number"
+            className="input-field"
+          />
+          <ValidationError prefix="Phone" field="phone" errors={state.errors} />
           <textarea
             id="message"
             name="message"

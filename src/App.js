@@ -36,7 +36,6 @@ Transforming landscapes with precision. Get your free estimate today!"
         />
         <meta name="author" content="Niv" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-              {/* Schema.org markup for Organization */}
               <script type="application/ld+json">
   {JSON.stringify({
     "@context": "http://schema.org/",
