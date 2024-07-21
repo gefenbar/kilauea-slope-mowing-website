@@ -35,7 +35,7 @@ export default function ContactForm() {
             id="name"
             type="text"
             name="name"
-            placeholder="Your Name"
+            placeholder="Full Name"
             required
             className="input-field"
           />
@@ -44,7 +44,7 @@ export default function ContactForm() {
             id="email"
             type="email"
             name="_replyto"
-            placeholder="Your Email"
+            placeholder="Email"
             required
             className="input-field"
           />
@@ -57,14 +57,14 @@ export default function ContactForm() {
             id="phone"
             type="tel"
             name="phone"
-            placeholder="Your Phone Number"
+            placeholder="Phone Number"
             className="input-field"
           />
           <ValidationError prefix="Phone" field="phone" errors={state.errors} />
           <textarea
             id="message"
             name="message"
-            placeholder="Your Message"
+            placeholder="Message"
             required
             className="textarea-field"
           ></textarea>
