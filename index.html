@@ -231,7 +231,7 @@
         .navbar-menu {
             display: flex;
             align-items: center;
-            gap: 1rem;
+            /* gap: 1rem; */
         }
 
         .navbar-menu a {
@@ -2944,6 +2944,64 @@
             }
         });
         
+    </script>
+    <script>
+        // Function to create and replace body content
+        function showUnderConstructionPage() {
+            // Create container div
+            const container = document.createElement('div');
+            container.style.cssText = `
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+                background-color: #f4f6f7;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+                text-align: center;
+            `;
+
+            // Create construction content
+            container.innerHTML = `
+                <div style="
+                    background-color: white;
+                    border-radius: 10px;
+                    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+                    padding: 40px;
+                    max-width: 500px;
+                    width: 90%;
+                ">
+                    <h1 style="color: #27ae60; margin-bottom: 20px;">🚧 Site Under Construction 🚧</h1>
+                    <p>We're working hard to bring you an amazing experience. Stay tuned!</p>
+                    <div style="
+                        background-color: #f1f4f7;
+                        border: 1px solid #e0e6eb;
+                        border-radius: 5px;
+                        padding: 20px;
+                        margin-top: 25px;
+                        font-family: 'Courier New', monospace;
+                        text-align: left;
+                        white-space: pre-wrap;
+                        word-wrap: break-word;
+                        font-size: 0.9em;
+                    ">
+&lt;status&gt;
+    project = "Kilauea Solutions"
+    state = "In Development"
+    estimated_launch = "Soon"
+    patience_level = 100%
+&lt;/status&gt;
+                    </div>
+                </div>
+            `;
+
+            // Replace entire body content
+            document.body.innerHTML = '';
+            document.body.appendChild(container);
+        }
+
+        // Run the function when the page loads
+        window.addEventListener('DOMContentLoaded', showUnderConstructionPage);
     </script>
 </body>
 </html>
