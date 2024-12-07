@@ -231,7 +231,7 @@
         .navbar-menu {
             display: flex;
             align-items: center;
-            gap: 1rem;
+            /* gap: 1rem; */
         }
 
         .navbar-menu a {
@@ -269,7 +269,6 @@
         /* Mobile Responsive Styles */
         @media (max-width: 768px) {
             .navbar-menu {
-                gap:0rem;
                 display: none;
                 position: fixed;
                 top: 70px;
@@ -2109,7 +2108,7 @@
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
     <meta name="description" content="Kilauea Solutions: Expert Landscape Engineering in Hawaii. Specializing in slope management, erosion control, and sustainable landscaping solutions.">
     <meta name="keywords" content="Hawaii landscape engineering, slope management, erosion control, sustainable landscaping, professional land services">
     <meta name="google-site-verification" content="qB6pWlEoyKSXxEVXU82Ynqek6Ij7_Gi4of9o113q8bA" />
@@ -2675,10 +2674,7 @@
     </footer>
 
     <!-- Minimal JavaScript for basic interactivity -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.css">
-    <!-- Add SweetAlert2 JavaScript library -->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             // Safe function to add event listeners
@@ -2858,7 +2854,14 @@
                                     icon: 'success',
                                     title: 'Message Sent!',
                                     text: 'Thank you for reaching out. We will get back to you soon.',
-                                    confirmButtonColor: '#27ae60'
+                                    confirmButtonColor: '#27ae60',
+                                    width: '90%',
+                                    heightAuto: false,
+                                    customClass: {
+                                        popup: 'mobile-swal-popup',
+                                        title: 'mobile-swal-title',
+                                        content: 'mobile-swal-content'
+                                    }
                                 });
                                 contactForm.reset();
                             } else {
@@ -2867,7 +2870,14 @@
                                     icon: 'error',
                                     title: 'Oops...',
                                     text: 'There was a problem sending your message. Please try again.',
-                                    confirmButtonColor: '#e74c3c'
+                                    confirmButtonColor: '#e74c3c',
+                                    width: '90%',
+                                    heightAuto: false,
+                                    customClass: {
+                                        popup: 'mobile-swal-popup',
+                                        title: 'mobile-swal-title',
+                                        content: 'mobile-swal-content'
+                                    }
                                 });
                             }
                         }).catch(error => {
@@ -2876,7 +2886,14 @@
                                 icon: 'error',
                                 title: 'Network Error',
                                 text: 'Please check your internet connection and try again.',
-                                confirmButtonColor: '#e74c3c'
+                                confirmButtonColor: '#e74c3c',
+                                width: '90%',
+                                heightAuto: false,
+                                customClass: {
+                                    popup: 'mobile-swal-popup',
+                                    title: 'mobile-swal-title',
+                                    content: 'mobile-swal-content'
+                                }
                             });
                         }).finally(() => {
                             // Re-enable submit button
