@@ -654,7 +654,7 @@
             <a href="index.html#contact">Contact</a>
         </div>
         <button class="navbar-mobile-toggle" aria-label="Toggle Mobile Menu">
-            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-right"></i>
         </button>
     </nav>
 
@@ -839,8 +839,9 @@
     if (mobileMenuToggle && navbarMenu) {
         // Toggle menu and toggle button state
         mobileMenuToggle.addEventListener('click', () => {
-            navbarMenu.classList.toggle('active');
-            mobileMenuToggle.classList.toggle('active');
+          location.href = "index.html"; 
+            // navbarMenu.classList.toggle('active');
+            // mobileMenuToggle.classList.toggle('active');
             
             // Prevent body scroll when menu is open
             document.body.style.overflow = navbarMenu.classList.contains('active') 
