@@ -265,68 +265,8 @@
             cursor: pointer;
             z-index: 1100;
         }
-
-        /* Mobile Responsive Styles */
-        @media (max-width: 768px) {
-            .navbar-menu {
-                display: none;
-                position: fixed;
-                top: 70px;
-                left: 0;
-                width: 100%;
-                background: white;
-                flex-direction: column;
-                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-                z-index: 1000;
-                max-height: calc(100vh - 70px);
-                /* overflow-y: auto; */
-                transform: scaleY(0);
-                transform-origin: top;
-                opacity: 0;
-                transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-            }
-
-            .navbar-menu.active {
-                
-                top:0;
-                display: flex;
-                transform: scaleY(1);
-                opacity: 1;
-            }
-
-            .navbar-menu a {
-                padding: 15px;
-                width: 100%;
-                text-align: center;
-                border-bottom: 1px solid var(--background-light);
-                opacity: 0;
-                transform: translateY(-20px);
-                transition: opacity 0.3s ease, transform 0.3s ease;
-            }
-
-            .navbar-menu.active a {
-                opacity: 1;
-                transform: translateY(0);
-                transition-delay: 0.2s;
-            }
-
-            .navbar-menu a:nth-child(1) { transition-delay: 0.2s; }
-            .navbar-menu a:nth-child(2) { transition-delay: 0.25s; }
-            .navbar-menu a:nth-child(3) { transition-delay: 0.3s; }
-            .navbar-menu a:nth-child(4) { transition-delay: 0.35s; }
-            .navbar-menu a:nth-child(5) { transition-delay: 0.4s; }
-            .navbar-menu a:nth-child(6) { transition-delay: 0.45s; }
-            .navbar-menu a:nth-child(7) { transition-delay: 0.5s; }
-
-            .navbar-mobile-toggle {
-                display: block;
-            }
-
-            .navbar-mobile-toggle.active i::before {
-                content: '\f00d'; /* Font Awesome close (x) icon */
-            }
-        }
-
+     
+     
         /* Hero Section Refined Styling */
         .hero {
             position: relative;
@@ -432,30 +372,8 @@
             color: white;
             transform: scale(1.05);
         }
-
-        @media (max-width: 768px) {
-            .hero-content {
-                width: 90%;
-                padding: 1.5rem;
-            }
-
-            .hero-content h1 {
-                font-size: 2.5rem;
-            }
-
-            .hero-content p {
-                font-size: 1rem;
-            }
-
-            .hero-cta {
-                flex-direction: column;
-            }
-
-            .hero-cta .btn {
-                width: 100%;
-                margin-bottom: 1rem;
-            }
-        }
+        
+    
 
         /* Services Section Advanced Styling */
         #services {
@@ -606,15 +524,7 @@
             border-radius: 50%;
         }
 
-        @media (max-width: 768px) {
-            .services-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .services-header h2 {
-                font-size: 2rem;
-            }
-        }
+      
 
         /* Technology Highlight */
         .technology-highlight {
@@ -754,15 +664,7 @@
             background-color: var(--primary-color);
         }
 
-        @media (max-width: 768px) {
-            .before-after-container {
-                flex-direction: column;
-            }
-
-            .before-after-card {
-                width: 100%;
-            }
-        }
+   
 
         /* Articles Section */
         .articles-section {
@@ -1283,15 +1185,9 @@
             }
         }
 
-        @media (max-width: 768px) {
-            .seo-content-section {
-                padding: 4rem 1rem;
-            }
-
-            .seo-content-text h2 {
-                font-size: 2rem;
-            }
-        }
+       
+       
+       
 
         /* Contact Section */
         .contact {
@@ -1437,28 +1333,7 @@
             box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.1);
         }
 
-        @media (max-width: 768px) {
-            .contact {
-                padding: 2rem 1rem;
-            }
-
-            .contact-container {
-                flex-direction: column;
-                align-items: center;
-                gap: 1rem;
-            }
-
-            .contact-info, .contact-form {
-                width: 100%;
-                max-width: 100%;
-            }
-
-            .contact-form input, 
-            .contact-form textarea {
-                width: 100%;
-                margin-bottom: 1rem;
-            }
-        }
+   
 
         .contact-bg-element {
             position: absolute;
@@ -1482,20 +1357,7 @@
             border-radius: 50%;
         }
 
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .navbar-menu {
-                display: none;
-            }
-
-            .hero-content h1 {
-                font-size: 2rem;
-            }
-
-            .social-sidebar {
-                display: none;
-            }
-        }
+    
 
         /* 3D Review Carousel Styles */
         .reviews-section {
@@ -1734,19 +1596,7 @@
             border-radius: 50%;
         }
 
-        @media (max-width: 768px) {
-            .insights-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .insights-header h2 {
-                font-size: 2rem;
-            }
-
-            .insight-card-image {
-                height: 200px;
-            }
-        }
+      
 
         /* Section Background Styling */
         .articles-section,
@@ -1884,16 +1734,113 @@
             color: var(--accent-color);
         }
 
-        @media (max-width: 768px) {
-            .footer-container {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .footer-column {
-                margin-bottom: 1.5rem;
-            }
-        }
+        @media (max-width: 768px) { 
+  .footer-container { 
+    flex-direction: column; 
+    text-align: center; 
+  } 
+  .footer-column { 
+    margin-bottom: 1.5rem; 
+  } 
+  .insights-grid { 
+    grid-template-columns: 1fr; 
+  } 
+  .insights-header h2, 
+  .services-header h2, 
+  .seo-content-text h2 { 
+    font-size: 2rem; 
+  } 
+  .insight-card-image { 
+    height: 200px; 
+  } 
+  .navbar-menu { 
+    display: none; 
+    position: fixed; 
+    top: 70px; 
+    left: 0; 
+    width: 100%; 
+    background: white; 
+    flex-direction: column; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+    z-index: 1000; 
+    max-height: calc(100vh - 70px); 
+    transform: scaleY(0); 
+    transform-origin: top; 
+    opacity: 0; 
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; 
+  } 
+  .navbar-menu.active { 
+    display: flex; 
+    transform: scaleY(1); 
+    opacity: 1; 
+  } 
+  .navbar-menu a { 
+    padding: 15px; 
+    width: 100%; 
+    text-align: center; 
+    border-bottom: 1px solid var(--background-light); 
+    opacity: 0; 
+    transform: translateY(-20px); 
+    transition: opacity 0.3s ease, transform 0.3s ease; 
+  } 
+  .navbar-menu.active a { 
+    opacity: 1; 
+    transform: translateY(0); 
+  } 
+  .navbar-mobile-toggle { 
+    display: block; 
+  } 
+  .contact { 
+    padding: 2rem 1rem; 
+  } 
+  .contact-container { 
+    flex-direction: column; 
+    align-items: center; 
+    gap: 1rem; 
+  } 
+  .contact-info, 
+  .contact-form { 
+    width: 100%; 
+    max-width: 100%; 
+  } 
+  .contact-form input, 
+  .contact-form textarea { 
+    width: 100%; 
+    margin-bottom: 1rem; 
+  } 
+  .services-grid { 
+    grid-template-columns: 1fr; 
+  } 
+  .before-after-container { 
+    flex-direction: column; 
+  } 
+  .before-after-card { 
+    width: 100%; 
+  } 
+  .seo-content-section { 
+    padding: 4rem 1rem; 
+  } 
+  .hero-content { 
+    width: 90%; 
+    padding: 1.5rem; 
+  } 
+  .hero-content h1 { 
+    font-size: 2rem; 
+  } 
+  .hero-content p { 
+    font-size: 1rem; 
+  } 
+  .hero-cta { 
+    flex-direction: column; 
+  } 
+  .hero-cta .btn { 
+    width: 100%; 
+    margin-bottom: 1rem; 
+  } 
+  .social-sidebar { 
+    display: none; 
+  } 
+}
 
         /* Before and After Section Advanced Styling */
         #before-after {
@@ -2026,16 +1973,7 @@
             background-color: var(--primary-color);
         }
 
-        @media (max-width: 768px) {
-            .before-after-container {
-                flex-direction: column;
-            }
-
-            .before-after-card {
-                width: 100%;
-            }
-        }
-
+      
         /* Remote-Controlled Mowing Technology Section */
         .remote-technology-section {
             background-color: var(--background-light);
