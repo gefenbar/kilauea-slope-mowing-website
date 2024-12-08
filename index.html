@@ -69,20 +69,7 @@
             transition: width 0.2s ease;
         }
 
-        /* Interactive Cursor */
-        .cursor {
-            position: fixed;
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            background: rgba(39, 174, 96, 0.5);
-            transform: translate(-50%, -50%);
-            pointer-events: none;
-            mix-blend-mode: difference;
-            z-index: 9999;
-            transition: transform 0.1s ease;
-        }
-
+    
         /* Parallax Background */
         .parallax-bg {
             /* position: absolute; */
@@ -143,12 +130,7 @@
             left: 100%;
         }
 
-        /* Floating Elements */
-        .floating-element {
-            position: absolute;
-            animation: float 4s ease-in-out infinite;
-            opacity: 0.7;
-        }
+      
 
         /* Reveal Animations */
         .reveal {
@@ -249,7 +231,7 @@
             width: 0;
             height: 2px;
             background-color: #27ae60;
-            transition: width 0.3s ease;
+            transition: width 0.75s ease;
         }
 
         .navbar-menu a:hover::after {
@@ -1768,6 +1750,7 @@
     transform-origin: top; 
     opacity: 0; 
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; 
+    gap: 0rem !important;
   } 
   .navbar-menu.active { 
     display: flex; 
@@ -2116,13 +2099,7 @@
             </div>
         </div>
 
-        <!-- Floating Decorative Elements -->
-        <div class="floating-element" style="top: 20%; left: 10%; animation-delay: -1s;">
-            <i class="fas fa-leaf" style="color: var(--accent-color); font-size: 3rem;"></i>
-        </div>
-        <div class="floating-element" style="top: 70%; right: 10%; animation-delay: -2s;">
-            <i class="fas fa-mountain" style="color: var(--primary-color); font-size: 4rem;"></i>
-        </div>
+      
     </section>
 
     <!-- Services Section -->
