@@ -751,44 +751,34 @@
             z-index: 1;
         }
 
-        .faq-section .section-header {
-            position: relative;
-            z-index: 2;
-            margin-bottom: 3rem;
+        .section-header {
+            text-align: center;
+            margin-bottom: 2rem;
         }
 
-        .faq-section .section-header h2 {
+        .section-header h2 {
             color: var(--primary-color);
             font-size: 2.5rem;
             margin-bottom: 1rem;
             position: relative;
-            display: inline-block;
         }
 
-        .faq-section .section-header h2::after {
+        .section-header h2::after {
             content: '';
             position: absolute;
             bottom: -10px;
-            left: 0;
-            width: 100%;
-            height: 3px;
-            background: linear-gradient(to right, var(--accent-color), var(--primary-color));
-            transform: scaleX(0);
-            transform-origin: right;
-            transition: transform 0.5s ease;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background-color: var(--accent-color);
         }
 
-        .faq-section .section-header h2:hover::after {
-            transform: scaleX(1);
-            transform-origin: left;
-        }
-
-        .faq-section .section-header p {
+        .section-header p {
             color: var(--secondary-color);
             font-size: 1.1rem;
             max-width: 700px;
             margin: 0 auto;
-            line-height: 1.6;
         }
 
         .faq-container {
@@ -2152,7 +2142,7 @@
 
     <!-- Before and After Section -->
     <section id="before-after">
-        <div class="before-after-header">
+        <div class="section-header">
             <h2>Before and After</h2>
             <p>Transforming Landscapes, Enhancing Beauty</p>
         </div>
@@ -2224,7 +2214,10 @@
 
     <!-- Landscaping Insights Section -->
     <section id="landscaping-insights" class="landscaping-insights-section">
-        <h2 style="text-align: center; margin-bottom: 2rem;">Landscaping Insights & Tips</h2>
+        <div class="section-header">
+            <h2>Landscaping Insights & Tips</h2>
+            <p>Expert Advice for Hawaii's Unique Landscapes</p>
+        </div>
         <div class="insights-grid">
             <div class="insight-card">
                 <div class="insight-card-image">
@@ -2469,9 +2462,12 @@
 
     <!-- SEO Content Section -->
     <section class="seo-content-section">
+        <div class="section-header">
+            <h2>Kilauea Solutions Inc.: Landscape Engineering Experts</h2>
+            <p>Expert Solutions for Hawaii's Unique Landscapes</p>
+        </div>
         <div class="seo-content-container">
             <div class="seo-content-text">
-                <h2>Kilauea Solutions Inc.: Landscape Engineering Experts</h2>
                 <p>At Kilauea Solutions Inc., we understand the unique challenges of landscaping in Hawaii's diverse terrain. Our specialized services are designed to address the specific needs of residential and commercial properties.</p>
                 <p>With years of experience in slope management, erosion control, and sustainable landscaping, we offer comprehensive solutions that protect your property while enhancing its natural beauty. Our team uses state-of-the-art equipment, ensuring precision and minimal environmental impact.</p>
             </div>
@@ -2523,9 +2519,12 @@
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
+        <div class="section-header">
+            <h2>Get in Touch</h2>
+            <p>Have a question or need a quote? We'd love to hear from you!</p>
+        </div>
         <div class="contact-container">
             <div class="contact-info">
-                <h2>Get in Touch</h2>
                 <p>Have a question or need a quote? We'd love to hear from you!</p>
                 <div class="contact-details">
                     <div class="contact-details-item">

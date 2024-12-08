@@ -601,6 +601,55 @@
         }
         article{padding: 15px;}
 
+        .section-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .section-header h2 {
+            color: var(--primary-color);
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            position: relative;
+        }
+
+        .section-header h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background-color: var(--accent-color);
+        }
+
+        .section-header p {
+            color: var(--secondary-color);
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Update existing section headers */
+        .related-articles h2 {
+            color: var(--primary-color);
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            position: relative;
+            text-align: center;
+        }
+
+        .related-articles h2::after {
+            content: none!important;
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background-color: var(--accent-color);
+        }
     </style>
 
     <!-- Font Awesome -->
@@ -746,7 +795,10 @@
 
     <!-- Related Articles Section -->
     <section class="related-articles">
-        <h2>Related Articles</h2>
+        <div class="section-header">
+            <h2>Related Articles</h2>
+            <p>Explore More Insights on Remote Slope Management</p>
+        </div>
         <div class="related-articles-grid">
           <article>
             <h3><a href="#">How Volcanic Soils Impact Slope Management</a></h3>
