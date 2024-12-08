@@ -1711,7 +1711,14 @@
             color: var(--accent-color);
         }
 
-        @media (max-width: 768px) { 
+@media (max-width: 768px) { 
+  .hero{
+        background-position: left!important;
+    }
+  .hero-content {
+        backdrop-filter: none;
+        background: none;
+    }
   .footer-container { 
     flex-direction: column; 
     text-align: center; 
@@ -2098,39 +2105,60 @@
     </section>
 
     <!-- Services Section -->
-    <section id="services">
-        <div class="services-header">
-            <h2>Our Specialized Services</h2>
-            <p>Expert solutions for challenging terrain landscapes in Hawaii</p>
+    <section id="services" class="services-section">
+        <div class="section-header">
+            <h2>Our Comprehensive Landscape Engineering Services</h2>
+            <p>Innovative Solutions for Hawaii's Unique Terrain</p>
         </div>
         <div class="services-grid">
             <div class="service-card">
-                <i class="fas fa-mountain"></i>
-                <h3>Slope Mowing</h3>
-                <p>Specialized mowing for steep and challenging terrains using advanced remote-controlled technology.</p>
+                <div class="service-icon">
+                    <i class="fas fa-mountain"></i>
+                </div>
+                <h3>Slope Stabilization</h3>
+                <p>Advanced erosion control and land stabilization techniques tailored to Hawaiian landscapes, preventing soil degradation and protecting property.</p>
             </div>
+            
             <div class="service-card">
-                <i class="fas fa-shield-alt"></i>
-                <h3>Safety First</h3>
-                <p>Our remote-controlled mowers ensure operator safety by eliminating risks in hazardous landscapes.</p>
+                <div class="service-icon">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <h3>Remote Slope Management</h3>
+                <p>Cutting-edge remote-controlled technologies for precision mowing and maintenance on challenging terrains, ensuring safety and efficiency.</p>
             </div>
+            
             <div class="service-card">
-                <i class="fas fa-leaf"></i>
-                <h3>Eco-Friendly Approach</h3>
-                <p>Lightweight remote mowers minimize environmental impact and soil disruption.</p>
+                <div class="service-icon">
+                    <i class="fas fa-leaf"></i>
+                </div>
+                <h3>Sustainable Landscaping</h3>
+                <p>Eco-friendly design and maintenance strategies that preserve Hawaii's delicate ecosystem while creating beautiful, resilient outdoor spaces.</p>
             </div>
+            
             <div class="service-card">
-                <i class="fas fa-bullseye"></i>
-                <h3>Precision Mowing</h3>
-                <p>Expert-controlled mowers deliver unmatched precision in hard-to-reach and challenging areas.</p>
+                <div class="service-icon">
+                    <i class="fas fa-tree"></i>
+                </div>
+                <h3>Native Plant Integration</h3>
+                <p>Expert consultation and implementation of native Hawaiian plant species, promoting biodiversity and natural landscape restoration.</p>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-water"></i>
+                </div>
+                <h3>Erosion Control Solutions</h3>
+                <p>Comprehensive water management and soil retention strategies to protect properties from landslides and environmental degradation.</p>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-globe-americas"></i>
+                </div>
+                <h3>Environmental Consulting</h3>
+                <p>Professional assessments and strategic recommendations for land use, conservation, and sustainable development in sensitive Hawaiian environments.</p>
             </div>
         </div>
-        <div class="technology-highlight text-center">
-            <h3>Cutting-Edge Remote-Controlled Technology</h3>
-            <p>Our innovative remote-controlled mowers are expertly operated by skilled technicians, providing safe, precise landscape maintenance for even the most challenging terrains.</p>
-        </div>
-        <div class="services-bg-element services-bg-element-1"></div>
-        <div class="services-bg-element services-bg-element-2"></div>
     </section>
 
     <!-- Before and After Section -->
