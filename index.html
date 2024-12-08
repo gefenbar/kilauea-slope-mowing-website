@@ -386,7 +386,7 @@
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 2rem;
             max-width: 1200px;
-            margin: 20px auto 0 0;
+            margin: 20px auto 0;
             position: relative;
             z-index: 2;
         }
@@ -433,7 +433,9 @@
         }
 
         .service-card:hover .service-icon {
-            transform: rotate(360deg) scale(1.2);
+            transform: rotate(0deg) scale(1.05);
+            color: var(--primary-color);
+            filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1));
         }
 
         .service-title {
@@ -2141,22 +2143,6 @@
                 </div>
                 <h3>Native Plant Integration</h3>
                 <p>Expert consultation and implementation of native Hawaiian plant species, promoting biodiversity and natural landscape restoration.</p>
-            </div>
-            
-            <div class="service-card">
-                <div class="service-icon">
-                    <i class="fas fa-water"></i>
-                </div>
-                <h3>Erosion Control Solutions</h3>
-                <p>Comprehensive water management and soil retention strategies to protect properties from landslides and environmental degradation.</p>
-            </div>
-            
-            <div class="service-card">
-                <div class="service-icon">
-                    <i class="fas fa-globe-americas"></i>
-                </div>
-                <h3>Environmental Consulting</h3>
-                <p>Professional assessments and strategic recommendations for land use, conservation, and sustainable development in sensitive Hawaiian environments.</p>
             </div>
         </div>
     </section>
