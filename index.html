@@ -37,11 +37,6 @@
             box-sizing: border-box;
         }
 
-        @keyframes float {
-            0% { transform: translateY(0px); }
-            50% { transform: translateY(-20px); }
-            100% { transform: translateY(0px); }
-        }
 
         @keyframes pulse {
             0% { transform: scale(1); }
@@ -78,7 +73,7 @@
             width: 100%;
             height: 100%;
             background: linear-gradient(135deg, rgba(44,62,80,0.8), rgba(52,73,94,0.8)), 
-                        url('images/mower_1.webp') no-repeat center center;
+                        url('images/mower1.webp') no-repeat center center;
             background-size: cover;
             z-index: -1;
             transform: translateZ(-1px) scale(2);
@@ -259,7 +254,7 @@
             justify-content: center;
             overflow: hidden;
             background: linear-gradient(135deg, rgba(44,62,80,0.8), rgba(52,73,94,0.8)), 
-                        url('images/mower_1.webp') no-repeat center center;
+                        url('images/mower1.webp') no-repeat center center;
             background-size: cover;
             color: white;
             text-align: center;
@@ -2216,13 +2211,13 @@
         <div class="insights-grid">
             <div class="insight-card">
                 <div class="insight-card-image">
-                    <img src="images/mower_1.webp" alt="Soil Erosion Prevention in Kauai">
+                    <img src="images/mower1.webp" alt="Hawaiian Volcanic Landscape Stabilization">
                 </div>
                 <div class="insight-card-content">
-                    <span class="insight-card-tag">Landscaping Tips</span>
-                    <h3 class="insight-card-title">Preventing Soil Erosion in Kauai</h3>
-                    <p class="insight-card-description">Learn about effective strategies to protect your landscape from erosion in Hawaii's unique climate.</p>
-                    <a href="articles/preventing-soil-erosion.html" class="insight-card-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    <span class="insight-card-tag">Slope Stabilization</span>
+                    <h3 class="insight-card-title">Navigating Hawaii's Geological Complexity</h3>
+                    <p class="insight-card-description">Discover advanced techniques for managing Hawaii's unique volcanic terrains, addressing challenges like steep slopes, volcanic soil, and extreme rainfall patterns.</p>
+                    <a href="slope-stabilization-hawaiian-landscapes.html" class="insight-card-link">Read More <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
             <div class="insight-card">
@@ -2231,20 +2226,20 @@
                 </div>
                 <div class="insight-card-content">
                     <span class="insight-card-tag">Sustainable Landscaping</span>
-                    <h3 class="insight-card-title">Native Plants for Slope Stabilization</h3>
-                    <p class="insight-card-description">Discover how native Hawaiian plants can help manage slope integrity and enhance landscape beauty.</p>
-                    <a href="articles/native-plants-slope-stabilization.html" class="insight-card-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    <h3 class="insight-card-title">Sustainable Landscape Management</h3>
+                    <p class="insight-card-description">Explore eco-friendly techniques for maintaining beautiful, resilient landscapes while preserving Hawaii's delicate ecosystems.</p>
+                    <a href="sustainable-landscaping-practices.html" class="insight-card-link">Read More <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
             <div class="insight-card">
                 <div class="insight-card-image">
-                    <img src="images/fire.webp" alt="Eco-Friendly Landscaping Practices">
+                    <img src="images/fire.webp" alt="Remote Slope Management Technologies">
                 </div>
                 <div class="insight-card-content">
-                    <span class="insight-card-tag">Eco-Friendly Landscaping</span>
-                    <h3 class="insight-card-title">Sustainable Landscaping Practices</h3>
-                    <p class="insight-card-description">Explore eco-friendly techniques for maintaining a beautiful, resilient landscape in Kauai.</p>
-                    <a href="articles/sustainable-landscaping-practices.html" class="insight-card-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    <span class="insight-card-tag">Technology</span>
+                    <h3 class="insight-card-title">Remote Slope Management Revolution</h3>
+                    <p class="insight-card-description">Discover how drones, AI, and IoT sensors are transforming landscape engineering and conservation in Hawaii's challenging terrains.</p>
+                    <a href="remote-slope-management-technologies.html" class="insight-card-link">Read More <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
@@ -2861,19 +2856,7 @@
         
     </script>
     <style>
-        #construction-note {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background-color: #27ae60;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            z-index: 1000;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            animation: slideDown 0.5s ease-out;
-        }
+       
         @keyframes slideDown {
             from { 
                 transform: translateY(-100%);
@@ -2884,45 +2867,8 @@
                 opacity: 1;
             }
         }
-        #close-note {
-            float: right;
-            cursor: pointer;
-            color: white;
-            font-weight: bold;
-            margin-right: 15px;
-        }
+      
     </style>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Create construction note element
-            const constructionNote = document.createElement('div');
-            constructionNote.id = 'construction-note';
-            
-            // Create close button
-            const closeButton = document.createElement('span');
-            closeButton.id = 'close-note';
-            closeButton.innerHTML = '&times;';
-            
-            // Set note content
-            constructionNote.innerHTML = 'Website Under Construction - Coming Soon! 🚧';
-            constructionNote.appendChild(closeButton);
-            
-            // Add to body
-            document.body.insertBefore(constructionNote, document.body.firstChild);
-            
-            // Close button functionality
-            closeButton.addEventListener('click', function() {
-                constructionNote.style.display = 'none';
-            });
-            
-            // Auto-hide after 10 seconds
-            setTimeout(() => {
-                if (constructionNote.parentNode) {
-                    constructionNote.style.display = 'none';
-                }
-            }, 10000);
-        });
-    </script>
 </body>
 </html>
